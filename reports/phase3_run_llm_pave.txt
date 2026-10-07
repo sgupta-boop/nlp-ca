@@ -1,0 +1,22 @@
+  25/354  330s  LLM calls=25  cache hits=0  failures=0  time=327.9s  output tokens=1270  (3.9 tok/s)
+  50/354  677s  LLM calls=50  cache hits=0  failures=0  time=672.4s  output tokens=2449  (3.6 tok/s)
+  75/354  981s  LLM calls=75  cache hits=0  failures=0  time=976.2s  output tokens=3812  (3.9 tok/s)
+  100/354  1269s  LLM calls=100  cache hits=0  failures=0  time=1263.7s  output tokens=5152  (4.1 tok/s)
+  125/354  1864s  LLM calls=125  cache hits=0  failures=0  time=1858.7s  output tokens=6471  (3.5 tok/s)
+  150/354  2222s  LLM calls=150  cache hits=0  failures=0  time=2216.0s  output tokens=7766  (3.5 tok/s)
+  175/354  2543s  LLM calls=175  cache hits=0  failures=0  time=2537.4s  output tokens=9035  (3.6 tok/s)
+  200/354  2863s  LLM calls=200  cache hits=0  failures=0  time=2856.6s  output tokens=10382  (3.6 tok/s)
+  225/354  3174s  LLM calls=225  cache hits=0  failures=0  time=3167.3s  output tokens=11691  (3.7 tok/s)
+  250/354  3476s  LLM calls=250  cache hits=0  failures=0  time=3469.6s  output tokens=12975  (3.7 tok/s)
+  275/354  3826s  LLM calls=275  cache hits=0  failures=0  time=3819.3s  output tokens=14396  (3.8 tok/s)
+  300/354  4138s  LLM calls=300  cache hits=0  failures=0  time=4130.8s  output tokens=15771  (3.8 tok/s)
+  325/354  4453s  LLM calls=325  cache hits=0  failures=0  time=4445.8s  output tokens=17195  (3.9 tok/s)
+  350/354  4749s  LLM calls=350  cache hits=0  failures=0  time=4741.4s  output tokens=18542  (3.9 tok/s)
+   attribute  precision  recall    f1  gold_n
+       brand      0.842   0.847 0.844     346
+product_type      0.452   0.630 0.526     254
+      colour      0.632   0.786 0.701      70
+    quantity      0.408   0.586 0.481      87
+  pack_count      0.377   0.444 0.408      46
+       MACRO      0.542   0.659 0.592     803
+LLM calls=354  cache hits=0  failures=0  time=4783.3s  output tokens=18736  (3.9 tok/s)

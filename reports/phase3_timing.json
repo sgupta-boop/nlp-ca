@@ -1,0 +1,22 @@
+{
+ "rules": {
+  "seconds": 0.79,
+  "names": 354,
+  "names_per_second": 449.78
+ },
+ "gliner": {
+  "seconds": 25.22,
+  "names": 354,
+  "names_per_second": 14.04
+ },
+ "llm": {
+  "seconds": 4791.03,
+  "names": 354,
+  "names_per_second": 0.07
+ },
+ "distilled": {
+  "seconds": 0.37,
+  "names": 354,
+  "names_per_second": 950.55
+ }
+}

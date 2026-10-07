@@ -1,0 +1,49 @@
+{'recall@1': 0.831, 'recall@5': 0.966, 'mrr': 0.891, 'dataset': 'abt_buy', 'representation': 'tfidf_word', 'input': 'text', 'queries': 1081, 'seconds': 1.0}
+{'recall@1': 0.645, 'recall@5': 0.877, 'mrr': 0.75, 'dataset': 'abt_buy', 'representation': 'tfidf_word', 'input': 'raw', 'queries': 1081, 'seconds': 0.7}
+{'recall@1': 0.786, 'recall@5': 0.943, 'mrr': 0.856, 'dataset': 'abt_buy', 'representation': 'tfidf_char', 'input': 'text', 'queries': 1081, 'seconds': 1.0}
+{'recall@1': 0.829, 'recall@5': 0.965, 'mrr': 0.889, 'dataset': 'abt_buy', 'representation': 'tfidf_char', 'input': 'raw', 'queries': 1081, 'seconds': 1.0}
+{'recall@1': 0.625, 'recall@5': 0.857, 'mrr': 0.73, 'dataset': 'abt_buy', 'representation': 'fasttext', 'input': 'text', 'queries': 1081, 'seconds': 146.0}
+{'recall@1': 0.393, 'recall@5': 0.653, 'mrr': 0.514, 'dataset': 'abt_buy', 'representation': 'fasttext', 'input': 'raw', 'queries': 1081, 'seconds': 1.6}
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4785.26it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\College\NLP_NOTES\NLP LAB CA\src\embed.py", line 180, in <module>
+    rows.append(evaluate_retrieval(dataset, kind, field))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\src\embed.py", line 164, in evaluate_retrieval
+    enc = Encoder(kind).fit(left[field].tolist() + right[field].tolist())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\src\embed.py", line 75, in fit
+    self.model = get_sbert(SBERT_MODELS[self.kind])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\src\embed.py", line 93, in get_sbert
+    _sbert[name] = SentenceTransformer(name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 46, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 194, in __init__
+    super().__init__(
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 275, in __init__
+    self.to(device)
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1343, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 903, in _apply
+    module._apply(fn)
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 903, in _apply
+    module._apply(fn)
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 903, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 930, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "D:\College\NLP_NOTES\NLP LAB CA\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1329, in convert
+    return t.to(
+           ^^^^^
+RuntimeError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

@@ -43,23 +43,30 @@ def _key(system: str, prompt: str, schema: type[BaseModel], model: str) -> str:
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
+NUM_CTX = 2048  # our prompts are < 1,000 tokens; a 4,096 context needs 0.4 GB more RAM than this laptop has
+
+
 def _chat(model: str, messages: list, schema: type[BaseModel]):
-    """One Ollama call. The GPU has only 4 GB, shared with PyTorch models (SBERT, GLiNER); if Ollama
-    cannot fit its usual share of layers it fails with 'out of memory', so we retry with fewer
-    layers on the GPU (slower, but it runs)."""
+    """One Ollama call, with two out-of-memory fallbacks for a 7.4 GB RAM / 4 GB VRAM laptop:
+    - GPU out of memory (PyTorch models such as SBERT or GLiNER hold VRAM): put fewer layers on the GPU
+    - CPU out of memory (other programs hold RAM): use a smaller context window"""
     import ollama  # imported here so modules that never call the LLM do not need Ollama running
-    options ={"temperature": 0, "seed": SEED}
-    for gpu_layers in (None, 12, 0):  # None = let Ollama decide; 0 = CPU only
-        if gpu_layers is not None:
-            options["num_gpu"] = gpu_layers
+    options = {"temperature": 0, "seed": SEED, "num_ctx": NUM_CTX}
+    for _ in range(3):
         try:
             return ollama.chat(model=model, messages=messages, format=schema.model_json_schema(),
                                think=False,  # qwen3's reasoning mode multiplies tokens; not needed
                                options=options)
         except ollama.ResponseError as e:
-            if "out of memory" not in str(e) or gpu_layers == 0:
+            msg = str(e)
+            if "out of memory" not in msg:
                 raise
             STATS["oom_retries"] += 1
+            if "cuda" in msg.lower():
+                options["num_gpu"] = 12 if "num_gpu" not in options else 0
+            else:
+                options["num_ctx"] = 1024
+    raise RuntimeError("Ollama ran out of memory three times; close other programs and retry")
 
 
 def ask_json(prompt: str, schema: type[BaseModel], system: str = "",

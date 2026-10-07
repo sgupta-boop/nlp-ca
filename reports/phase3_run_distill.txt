@@ -1,0 +1,13 @@
+learning curve: {'llm_labelled_names': 250, 'train': 220, 'dev': 24, 'skipped_no_span': 6, 'train_seconds': 16.1, 'brand': 0.289, 'product_type': 0.034, 'colour': 0.101, 'quantity': 0.017, 'pack_count': 0.0, 'MACRO': 0.088}
+learning curve: {'llm_labelled_names': 500, 'train': 441, 'dev': 49, 'skipped_no_span': 10, 'train_seconds': 21.3, 'brand': 0.345, 'product_type': 0.032, 'colour': 0.147, 'quantity': 0.015, 'pack_count': 0.0, 'MACRO': 0.108}
+learning curve: {'llm_labelled_names': 1000, 'train': 878, 'dev': 97, 'skipped_no_span': 25, 'train_seconds': 41.9, 'brand': 0.422, 'product_type': 0.053, 'colour': 0.215, 'quantity': 0.035, 'pack_count': 0.0, 'MACRO': 0.145}
+learning curve: {'llm_labelled_names': 2000, 'train': 1760, 'dev': 195, 'skipped_no_span': 45, 'train_seconds': 84.4, 'brand': 0.413, 'product_type': 0.06, 'colour': 0.311, 'quantity': 0.042, 'pack_count': 0.0, 'MACRO': 0.165}
+sizes {'train': 1760, 'dev': 195, 'skipped_no_span': 45} train seconds 84.4
+method        distilled  gliner    llm  rules
+attribute                                    
+MACRO             0.165   0.505  0.592  0.340
+brand             0.413   0.769  0.844  0.409
+colour            0.311   0.697  0.701  0.730
+pack_count        0.000   0.637  0.408  0.309
+product_type      0.060   0.186  0.526  0.089
+quantity          0.042   0.234  0.481  0.163
