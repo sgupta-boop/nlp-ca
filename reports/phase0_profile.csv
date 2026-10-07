@@ -1,0 +1,15 @@
+,BigBasket,Flipkart,Abt,Buy,Amazon,Google,OFF India
+rows,27555,20000,1081,1092,1363,3226,21189
+columns,9,15,4,5,5,5,6
+name column,product,product_name,name,name,title,name,product_name
+mean null % (all cols),3.5,2.0,15.3,17.4,1.7,19.7,27.8
+null % in name,0.0,0.0,0.0,0.0,0.0,0.0,16.32
+exact duplicate rows,354,0,0,0,0,0,0
+duplicate names,4014,7324,0,13,18,205,2376
+duplicate names (lowercased),4043,7377,0,13,18,205,3372
+name length chars (median),30,39,55,48,33,55,17
+name length tokens (mean),5.7,6.4,9.1,8.3,5.7,9.3,3.0
+name length tokens (max),22,41,17,34,28,40,29
+names with a quantity %,4.1,5.5,9.1,8.2,0.6,0.9,8.9
+distinct unit spellings,18,20,10,7,4,7,22
+distinct brands,2313.0,3499.0,,116.0,350.0,67.0,5016.0

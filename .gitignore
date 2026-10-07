@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# large / re-downloadable data
+data/raw/
+data/processed/
+models/
+
+# secrets
+kaggle.json
+access_token
+.env

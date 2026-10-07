@@ -1,0 +1,28 @@
+model load + first call: 69.0s
+model in memory: qwen3:8b  size=5.6 GiB  on GPU=2.1 GiB (39%)
+  'Fortune Sunlite Refined Sunflower Oil 1 ltr Pouch'     -> {'brand': 'Fortune', 'product_type': 'Sunflower Oil', 'quantity': 1.0, 'unit': 'ltr'}
+  'Tata Salt Lite Low Sodium 1 kg'                        -> {'brand': 'Tata', 'product_type': 'Salt', 'quantity': 1.0, 'unit': 'kg'}
+  'Britannia Good Day Cashew Cookies 200 gm'              -> {'brand': 'Britannia', 'product_type': 'Cookies', 'quantity': 200.0, 'unit': 'gm'}
+  'Amul Pure Ghee 500 ml Tin'                             -> {'brand': 'Amul', 'product_type': 'Ghee', 'quantity': 500.0, 'unit': 'ml'}
+  'Maggi 2-Minute Masala Noodles pack of 4'               -> {'brand': 'Maggi', 'product_type': 'Noodles', 'quantity': 4.0, 'unit': 'pack'}
+LLM calls=5  cache hits=0  failures=0  time=46.7s  output tokens=174  (3.7 tok/s)
+seconds per call: 9.33  ->  2,000 names would take ~5.2 h
+pandas                 3.0.6
+spacy                  3.8.16
+sklearn                1.9.1
+sentence_transformers  6.1.0
+faiss                  1.15.1
+umap                   0.5.12
+gliner                 0.2.29
+rapidfuzz              3.14.6
+symspellpy             ok
+ollama                 ok
+pydantic               2.13.5
+bertopic               0.17.4
+streamlit              1.65.0
+gensim                 4.4.0
+duckdb                 1.5.6
+torch                  2.6.0+cu124
+CUDA available: True | NVIDIA GeForce GTX 1650 Ti
+spaCy lemmas (original case): ['Britannia', 'good', 'Day', 'Cashew', 'Biscuits', '200', 'gm']
+spaCy lemmas (lowercased):    ['britannia', 'good', 'day', 'cashew', 'biscuit', '200', 'gm']
