@@ -1,0 +1,15 @@
+method,accuracy,llm_calls
+rules only (header keywords),0.898,0
+"embeddings, header only",0.797,0
+"embeddings, header + 5 samples",0.644,0
+LLM only (qwen3:8b),0.949,59
+embeddings (header + samples) + LLM if cosine < 0.3,0.729,8
+embeddings (header + samples) + LLM if cosine < 0.4,0.864,24
+embeddings (header + samples) + LLM if cosine < 0.5,0.949,46
+embeddings (header + samples) + LLM if cosine < 0.6,0.949,57
+embeddings (header only) + LLM if cosine < 0.3,0.915,13
+embeddings (header only) + LLM if cosine < 0.4,0.966,29
+embeddings (header only) + LLM if cosine < 0.5,0.949,45
+embeddings (header only) + LLM if cosine < 0.6,0.949,59
+"CASCADE: rules if a keyword fires, else LLM",0.932,13
+SYSTEM: cascade + price/MRP value rule,0.966,13

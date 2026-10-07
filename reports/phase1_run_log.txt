@@ -1,0 +1,23 @@
+                                             method  accuracy  llm_calls
+                       rules only (header keywords)     0.898          0
+                            embeddings, header only     0.797          0
+                     embeddings, header + 5 samples     0.644          0
+                                LLM only (qwen3:8b)     0.949         59
+embeddings (header + samples) + LLM if cosine < 0.3     0.729          8
+embeddings (header + samples) + LLM if cosine < 0.4     0.864         24
+embeddings (header + samples) + LLM if cosine < 0.5     0.949         46
+embeddings (header + samples) + LLM if cosine < 0.6     0.949         57
+     embeddings (header only) + LLM if cosine < 0.3     0.915         13
+     embeddings (header only) + LLM if cosine < 0.4     0.966         29
+     embeddings (header only) + LLM if cosine < 0.5     0.949         45
+     embeddings (header only) + LLM if cosine < 0.6     0.949         59
+        CASCADE: rules if a keyword fires, else LLM     0.932         13
+             SYSTEM: cascade + price/MRP value rule     0.966         13
+LLM calls=0  cache hits=59  failures=0  time=0.0s  output tokens=0  (0.0 tok/s)
+column selection: {'precision': 0.929, 'recall': 1.0, 'f1': 0.963, 'tp': 13, 'fp': 1, 'fn': 0}
+bigbasket (27555, 11) ['source', 'product_name', 'brand', 'category', 'sub_category', 'price', 'mrp', 'quantity', 'description', 'rating', 'id']
+flipkart (20000, 11) ['source', 'product_name', 'brand', 'category', 'sub_category', 'price', 'mrp', 'quantity', 'description', 'rating', 'id']
+off_india (21189, 11) ['source', 'product_name', 'brand', 'category', 'sub_category', 'price', 'mrp', 'quantity', 'description', 'rating', 'id']
+abt (1081, 11) ['source', 'product_name', 'brand', 'category', 'sub_category', 'price', 'mrp', 'quantity', 'description', 'rating', 'id']
+buy (1092, 11) ['source', 'product_name', 'brand', 'category', 'sub_category', 'price', 'mrp', 'quantity', 'description', 'rating', 'id']
+LLM calls=0  cache hits=66  failures=0  time=0.0s  output tokens=0  (0.0 tok/s)

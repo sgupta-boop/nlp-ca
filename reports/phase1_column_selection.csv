@@ -1,0 +1,60 @@
+column,non_null,avg_tokens,unique_ratio,alpha_ratio,entropy,url_ratio,selected,reason,role,source,cluster_text
+id,1.0,1.0,1.0,0.0,10.08,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,abt,0
+name,1.0,9.07,1.0,0.726,10.08,0.0,True,"free text, 9.07 tokens, 100% unique, 73% letters",primary (name),abt,1
+description,1.0,36.19,1.0,0.757,10.08,0.0,True,"free text, 36.19 tokens, 100% unique, 76% letters",secondary (context),abt,1
+price,0.387,1.0,0.397,0.0,6.7,0.0,False,"mostly empty (39% filled); mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,abt,0
+id,1.0,1.0,1.0,0.523,10.41,0.0,False,"mostly non-letters (52% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,amazon,0
+title,1.0,5.72,0.987,0.779,10.39,0.0,True,"free text, 5.72 tokens, 99% unique, 78% letters",primary (name),amazon,1
+description,0.916,217.06,0.982,0.822,10.24,0.015,True,"free text, 217.06 tokens, 98% unique, 82% letters",secondary (context),amazon,1
+manufacturer,1.0,1.77,0.257,0.933,7.16,0.0,False,"too short (1.77 tokens: a label, not free text); low uniqueness (26%: a category-like column)",,amazon,0
+price,1.0,1.0,0.178,0.0,5.74,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (18%: a category-like column)",,amazon,0
+index,1.0,1.0,1.0,0.0,14.75,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,bigbasket,0
+product,1.0,5.71,0.854,0.807,14.41,0.0,True,"free text, 5.71 tokens, 85% unique, 81% letters",primary (name),bigbasket,1
+category,1.0,3.46,0.0,0.807,2.95,0.0,False,low uniqueness (0%: a category-like column),,bigbasket,0
+sub_category,1.0,2.94,0.003,0.833,5.77,0.0,False,low uniqueness (0%: a category-like column),,bigbasket,0
+brand,1.0,1.42,0.084,0.942,9.85,0.0,False,"too short (1.42 tokens: a label, not free text); low uniqueness (8%: a category-like column)",,bigbasket,0
+sale_price,1.0,1.0,0.118,0.0,9.47,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (12%: a category-like column)",,bigbasket,0
+market_price,1.0,1.0,0.049,0.0,8.2,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (5%: a category-like column)",,bigbasket,0
+type,1.0,2.85,0.015,0.853,7.78,0.0,False,low uniqueness (2%: a category-like column),,bigbasket,0
+rating,0.687,1.0,0.002,0.0,4.27,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (0%: a category-like column)",,bigbasket,0
+description,0.996,79.68,0.8,0.808,14.19,0.058,True,"free text, 79.68 tokens, 80% unique, 81% letters",secondary (context),bigbasket,1
+id,1.0,1.0,1.0,0.0,10.09,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,buy,0
+name,1.0,8.31,0.988,0.701,10.06,0.0,True,"free text, 8.31 tokens, 99% unique, 70% letters",primary (name),buy,1
+description,0.596,10.43,0.859,0.663,9.0,0.0,True,"free text, 10.43 tokens, 86% unique, 66% letters",secondary (context),buy,1
+manufacturer,0.995,1.2,0.107,0.97,5.35,0.0,False,"too short (1.2 tokens: a label, not free text); low uniqueness (11%: a category-like column)",,buy,0
+price,0.54,1.0,0.892,0.0,8.95,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,buy,0
+uniq_id,1.0,1.0,1.0,0.379,14.29,0.0,False,"mostly non-letters (38% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,flipkart,0
+crawl_timestamp,1.0,3.0,0.019,0.0,5.63,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); low uniqueness (2%: a category-like column)",,flipkart,0
+product_url,1.0,1.0,1.0,0.801,14.29,1.0,False,"URLs; too short (1.0 tokens: a label, not free text)",,flipkart,0
+product_name,1.0,6.43,0.634,0.815,12.93,0.0,True,"free text, 6.43 tokens, 63% unique, 82% letters",primary (name),flipkart,1
+product_category_tree,1.0,14.03,0.323,0.691,10.15,0.0,True,"free text, 14.03 tokens, 32% unique, 69% letters",secondary (context),flipkart,0
+pid,1.0,1.0,1.0,0.885,14.29,0.0,False,"too short (1.0 tokens: a label, not free text)",,flipkart,0
+retail_price,0.996,1.0,0.113,0.0,7.99,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (11%: a category-like column)",,flipkart,0
+discounted_price,0.996,1.0,0.123,0.0,8.41,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text); low uniqueness (12%: a category-like column)",,flipkart,0
+image,1.0,3.54,0.93,0.707,14.04,1.0,False,URLs,,flipkart,0
+is_FK_Advantage_product,1.0,1.0,0.0,1.0,0.24,0.0,False,"too short (1.0 tokens: a label, not free text); low uniqueness (0%: a category-like column)",,flipkart,0
+description,1.0,68.7,0.877,0.777,13.87,0.001,True,"free text, 68.7 tokens, 88% unique, 78% letters",secondary (context),flipkart,1
+product_rating,1.0,2.82,0.002,0.891,0.78,0.0,False,low uniqueness (0%: a category-like column),,flipkart,0
+overall_rating,1.0,2.82,0.002,0.891,0.78,0.0,False,low uniqueness (0%: a category-like column),,flipkart,0
+brand,0.707,1.36,0.248,0.961,9.96,0.0,False,"too short (1.36 tokens: a label, not free text); low uniqueness (25%: a category-like column)",,flipkart,0
+product_specifications,0.999,47.5,0.942,0.575,14.08,0.0,False,"mostly non-letters (57% letters: ids, prices, codes)",,flipkart,0
+id,1.0,1.0,1.0,0.534,11.66,1.0,False,"URLs; mostly non-letters (53% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,google,0
+name,1.0,9.26,0.936,0.736,11.49,0.0,True,"free text, 9.26 tokens, 94% unique, 74% letters",primary (name),google,1
+description,0.941,33.05,0.885,0.782,11.22,0.001,True,"free text, 33.05 tokens, 88% unique, 78% letters",secondary (context),google,1
+manufacturer,0.072,1.9,0.289,0.936,4.87,0.0,False,"mostly empty (7% filled); too short (1.9 tokens: a label, not free text); low uniqueness (29%: a category-like column)",,google,0
+price,1.0,1.02,0.432,0.01,9.34,0.0,False,"mostly non-letters (1% letters: ids, prices, codes); too short (1.02 tokens: a label, not free text)",,google,0
+code,1.0,1.0,1.0,0.0,13.63,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,off,0
+url,1.0,1.0,1.0,0.705,13.63,1.0,False,"URLs; too short (1.0 tokens: a label, not free text)",,off,0
+creator,1.0,1.0,0.041,0.947,3.87,0.0,False,"too short (1.0 tokens: a label, not free text); low uniqueness (4%: a category-like column)",,off,0
+created_t,1.0,1.0,0.97,0.0,13.55,0.0,False,"mostly non-letters (0% letters: ids, prices, codes); too short (1.0 tokens: a label, not free text)",,off,0
+product_name,0.839,3.06,0.927,0.866,13.2,0.0,True,"free text, 3.06 tokens, 93% unique, 87% letters",primary (name),off,1
+quantity,0.23,1.7,0.33,0.374,8.47,0.0,False,"mostly empty (23% filled); mostly non-letters (37% letters: ids, prices, codes); too short (1.7 tokens: a label, not free text)",,off,0
+packaging,0.051,1.79,0.526,0.887,7.6,0.0,False,"mostly empty (5% filled); too short (1.79 tokens: a label, not free text)",,off,0
+brands,0.474,1.59,0.523,0.923,10.55,0.0,False,"mostly empty (47% filled); too short (1.59 tokens: a label, not free text)",,off,0
+categories,0.236,9.3,0.644,0.837,10.27,0.0,False,mostly empty (24% filled),,off,0
+labels,0.216,3.66,0.349,0.825,8.12,0.0,False,mostly empty (22% filled),,off,0
+countries,0.988,1.21,0.04,0.896,5.38,0.0,False,"too short (1.21 tokens: a label, not free text); low uniqueness (4%: a category-like column)",,off,0
+ingredients_text,0.164,35.87,0.952,0.766,10.9,0.013,False,mostly empty (16% filled),,off,0
+serving_size,0.306,2.01,0.355,0.303,8.88,0.0,False,"mostly empty (31% filled); mostly non-letters (30% letters: ids, prices, codes)",,off,0
+nutriscore_grade,0.972,1.0,0.001,0.993,0.96,0.0,False,"too short (1.0 tokens: a label, not free text); low uniqueness (0%: a category-like column)",,off,0
+stores,0.051,1.45,0.244,0.86,5.88,0.028,False,"mostly empty (5% filled); too short (1.45 tokens: a label, not free text); low uniqueness (24%: a category-like column)",,off,0

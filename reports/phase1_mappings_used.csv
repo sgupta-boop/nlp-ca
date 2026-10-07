@@ -1,0 +1,41 @@
+source,header,predicted,decided_by
+bigbasket,index,id,llm
+bigbasket,product,product_name,llm
+bigbasket,category,category,rules
+bigbasket,sub_category,sub_category,rules
+bigbasket,brand,brand,rules
+bigbasket,sale_price,price,rules + price/mrp rule
+bigbasket,market_price,mrp,rules + price/mrp rule
+bigbasket,type,sub_category,llm
+bigbasket,rating,rating,rules
+bigbasket,description,description,rules
+flipkart,uniq_id,id,rules
+flipkart,crawl_timestamp,other,rules
+flipkart,product_url,other,rules
+flipkart,product_name,product_name,rules
+flipkart,product_category_tree,category,rules
+flipkart,pid,id,llm
+flipkart,retail_price,mrp,rules + price/mrp rule
+flipkart,discounted_price,price,rules + price/mrp rule
+flipkart,image,other,rules
+flipkart,is_FK_Advantage_product,other,llm
+flipkart,description,description,rules
+flipkart,product_rating,rating,rules
+flipkart,overall_rating,rating,rules
+flipkart,brand,brand,rules
+flipkart,product_specifications,other,llm
+off_india,code,id,rules
+off_india,product_name,product_name,rules
+off_india,brands,brand,rules
+off_india,categories,category,rules
+off_india,quantity,quantity,rules
+off_india,countries_tags,other,llm
+abt,id,id,rules
+abt,name,product_name,rules
+abt,description,description,rules
+abt,price,price,rules
+buy,id,id,rules
+buy,name,product_name,rules
+buy,description,description,rules
+buy,manufacturer,brand,rules
+buy,price,price,rules

@@ -62,6 +62,8 @@ Loaders for all of them are in `src/data_io.py`.
 |---|---|---|
 | 0 Setup and EDA | `python scripts/check_env.py`, then `jupyter nbconvert --to notebook --execute --inplace notebooks/00_eda.ipynb` | `reports/phase0_profile.csv`, `reports/figures/`, `reports/phase0_verification.md` |
 
+| 1 Column mapping + selection | `python -m src.columns` | `data/processed/*_canonical.parquet`, `reports/phase1_*.csv`, `notebooks/01_columns.ipynb` |
+
 Tests: `python -m pytest -v`
 
 ## Folder structure

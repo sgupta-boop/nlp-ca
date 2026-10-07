@@ -1,0 +1,457 @@
+{
+ "384c25fbf176781c6f334a3b3400a133e241bf23db6129f15712fdb0a97220c5": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: index\nSample values: ['16202', '24963', '18965', '8881', '13853']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "d4bce4b97812c63d853e1ad3f46ad8cc11d1ccf8e58ea11f1fcf0a528ef7bd49": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product\nSample values: ['Pure Impact Body Wash With Purifying Micro Particles - Showe', 'Premium Care XXL - 30 Diaper Pants', 'Tomato - Green', 'Plastic Crayons', 'Mixture Special']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "eec0ae77046de63de4037a88194064544b8f05ea13bb854de64107d6a9e50f6b": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: category\nSample values: ['Snacks & Branded Foods', 'Beauty & Hygiene', 'Fruits & Vegetables', 'Eggs, Meat & Fish', 'Cleaning & Household']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "category"
+  }
+ },
+ "e299f242eafa6caf14a51671ddc67c3a79892843861b7f1f18940922a2248598": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: sub_category\nSample values: ['Crockery & Cutlery', 'Fragrances & Deos', 'Energy & Soft Drinks', 'Party & Festive Needs', 'Hair Care']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "sub_category"
+  }
+ },
+ "a3c5aac6417bb45db6c54aed1c0e1183f91b14544dc007f569abe896874ebace": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: brand\nSample values: ['Red Label', 'Lomani', 'Happily Unmarried', 'Gillette', 'Tasty Fresh']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "1987452952e09fff9da90a3f157aaf3e638b852a64977c7f24b3f9de00bea0b1": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: sale_price\nSample values: ['2880.0', '40.0', '293.02', '309.78', '212.0']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "63b713cd7f6c65f25371fa33a0cdb64ad7e019f6de793d7961557fbfd32a2128": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: market_price\nSample values: ['192.0', '1164.0', '74.38', '1035.0', '1085.0']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "mrp"
+  }
+ },
+ "2631b55b8abafeab4158c01330d347a6056a3a34c993dbc3ab66ca73ed15c066": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: type\nSample values: ['Nappies & Rash Cream', 'Hair Removal', 'Crackers & Digestive', 'Green Tea', 'Atta Whole Wheat']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "sub_category"
+  }
+ },
+ "9c33e700de2d46d27a7c9252ed36d09fc56515c2dbdc072b5baea3129db809d4": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: rating\nSample values: ['3.0', '1.5', '3.9', '1.8', '4.4']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "rating"
+  }
+ },
+ "b29141bb0e1df8a63a1bd4147fdf44674ce14ca2bd7c15b606c80e8aa4a1ec71": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: ['Let your kid carry pencils, erasers, sharpeners and ruler in', 'Tetley Black Tea with natural earl grey flavour', 'Cheese slices plain are farmhouse cheese slices made of Buff', 'Swastik Jars and Containers are made from high-quality food-', 'Our Foccacia is made with olive oil and highest quality herb']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "ad9b8df2db7f502c95c8362c241681cb74286608ba7270cb1da114e5fa9f435d": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: uniq_id\nSample values: ['cbde249bb4d416b14712d6defac4ba6b', '243f2b72bab00923359c75ec6528e3da', 'c69024ad5311db7c27d87e9c7ac14d28', 'e2ae2af58ac50adf4881751ae84a9d8a', 'f63d516761cafff079061640612dceba']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "fe721b5d071a82defd566a1970202a44ac92323ab350900c3757648fb4f92282": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: crawl_timestamp\nSample values: ['2016-03-19 07:04:11 +0000', '2016-06-17 11:45:06 +0000', '2016-06-12 08:33:38 +0000', '2016-06-26 16:30:14 +0000', '2016-05-26 07:34:28 +0000']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "a1be306141a90e73075409f460cda4de089c4b3375eff384f61d995ead30435f": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_url\nSample values: ['http://www.flipkart.com/avaron-projekt-moustache-brooch/p/it', 'http://www.flipkart.com/grafion-comfort-feel-women-s-tube-br', 'http://www.flipkart.com/blessed-ring-plant-container-set/p/i', 'http://www.flipkart.com/jrb-1042-smallest-mobile-powered-otg', 'http://www.flipkart.com/northern-lights-striped-men-s-polo-n']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "2dc3c6a642d9a2c0ef294ae82413487e9e89cddac4c000752923ae26cce798ce": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_name\nSample values: [\"I Am For You Casual Full Sleeve Solid Women's Top\", 'Clovia Lingerie Set', 'Cotonex Blue, Pink Cotton Kitchen Linen Set', 'Karatcraft Insieme Yellow Gold Diamond 18 K Ring', 'Smart Picks Hannah Montana Cloth Pencil Box']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "d1057ec7073e9068fbf29130f637c759b8d20f01fb2b90acbbe355abe31d1f1a": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_category_tree\nSample values: ['[\"Home Decor & Festive Needs >> Table Decor & Handicrafts >>', '[\"Mobiles & Accessories >> Mobile Accessories >> Mobile Pouc', '[\"Clothing >> Women\\'s Clothing >> Western Wear >> Shirts, To', '[\"Mobiles & Accessories >> Mobile Accessories >> Screen Guar', '[\"Clothing >> Women\\'s Clothing >> Fusion Wear >> Kurta Kurti']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "378ca880a889cb83195947daddd971f315b2cdf86e660cbba2ede7e2b9a28d56": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: pid\nSample values: ['SWSEBWYCGGNCRXJH', 'NKCDZHF7GVHHGZRJ', 'SHOE6XNZ7WS4ZQXH', 'CSOE94WXKFHZHW9R', 'PCSE3693H9GC3D2Q']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "335b17566c6ee65a1b79cebfb218b2e2db4c0bfac3b25b5d690452e808011a02": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: retail_price\nSample values: ['36543.0', '25730.0', '6000.0', '8690.0', '37130.0']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "87036fb732eff9f346c1b9596c60c59ab0709bb6e7c4a40786ccc71e6433baa4": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: discounted_price\nSample values: ['291.0', '1485.0', '411.0', '1745.0', '4050.0']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "c7f5e6464ac12ce6554919f99783071b888f5c8ec7a64860c62d0f0767929ef8": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: image\nSample values: ['[\"http://img5a.flixcart.com/image/pet-apparel/e/v/g/super-wa', '[\"http://img5a.flixcart.com/image/legging-jegging/g/s/z/1-1-', '[\"http://img5a.flixcart.com/image/bra/4/c/k/tube-pink1-luxem', '[\"http://img6a.flixcart.com/image/cushion-pillow-cover/w/t/f', '[\"http://img6a.flixcart.com/image/shoe/x/r/y/blue-rialto-201']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "385648bef054df3bbe7a701777b5ad17acf19b73c2d954f223039c1370f8b6ca": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: is_FK_Advantage_product\nSample values: ['False', 'True']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "da92bcd41ac802d0aa4c3e99adca4f461f3b8c6e452f1ee6287197a25a48abe6": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: [\"ShowTime Women's Full Coverage, T-Shirt Bra - Buy White Show\", \"Remanika Women's Dress - Buy Black, White Remanika Women's D\", \"Ninja Turtle Printed Men's Polo T-Shirt - Buy Orange Ninja T\", \"I Am For You Women's Solid Casual Shirt - Buy Beige I Am For\", 'Buy Raymond Abstract Single Blanket Purple at Rs. 2399 at Fl']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "4a2a23c96a24f2ddccb6e810d6230b1ca08fbd8d2b6e73453e47e9393bdfdc0a": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_rating\nSample values: ['1.8', '3.2', '4.6', '4.9', '3.3']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "rating"
+  }
+ },
+ "7c7efb4ffff99e3f12e8293721a275ee5f6406332bfb11a9bb53d4e05ae2c0d9": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: overall_rating\nSample values: ['1.8', '3.2', '4.6', '4.9', '3.3']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "rating"
+  }
+ },
+ "16a1994d87ec78f34b519a4ac9700094418e609075225c87fd1dbb15049c09d0": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: brand\nSample values: ['Wonderland', \"Radhika's World of Crafts\", 'Solah Shringar', 'Download Apparel', 'Stealodeal']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "ee6d61d39c85271208a86aa3bea5131fa766f9be98c1fb000143cb44c6478f0c": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_specifications\nSample values: ['{\"product_specification\"=>[{\"key\"=>\"Brand\", \"value\"=>\"Allure', '{\"product_specification\"=>[{\"key\"=>\"Wireless Speed\", \"value\"', '{\"product_specification\"=>[{\"key\"=>\"Sales Package\", \"value\"=', '{\"product_specification\"=>[{\"key\"=>\"Model Name\", \"value\"=>\"E', '{\"product_specification\"=>[{\"key\"=>\"Collection\", \"value\"=>\"D']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "05bce072a8f3d244051c64baa8cd0a46e5f95504bb0b61673186e0b2c2f73c9c": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: id\nSample values: ['32889', '33936', '35175', '34126', '38773']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "446cddf5566cfa2dcb5c3a7807f5c843c45b7fb5efb2c0b72a66c7137d843e94": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: name\nSample values: ['Pioneer Sirius Bus Interface - CDSB10', \"Panasonic Black 8.5' Portable DVD Player - DVDLS86\", \"LG 24' LDS4821BB Semi Integrated Built In Black Dishwasher -\", 'Belkin Cush Top For Computer Laptop - F8N044SLV', 'Sony Black HD Radio With Dock For iPod And iPhone - XDRS10HD']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "cfc150e12ea90a232b014fec7b60fc652a60382aeab99f87ebbf9e69519951d4": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: [\"Pioneer Sirius Bus Interface - CDSB10/ Sirius Connect' Compa\", \"Panasonic Black 8.5' Portable DVD Player - DVDLS86/ 8.5' Fre\", \"LG 24' LDS4821BB Semi Integrated Built In Black Dishwasher -\", 'Belkin Cush Top For Computer Laptop - F8N044SLV/ Uniquely De', 'Sony Black HD Radio With Dock For iPod And iPhone - XDRS10HD']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "a1ef77e9929f83dfb8dbc265656c769c4784917da3c99c408da0066f9d0d62e7": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: price\nSample values: ['$74.00', '$222.00', '$919.00', '$199.00', '$3,999.00']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "8d36b72f48eba048d6ea133489667aa88b41b4979330e82e06543adc8d0840cc": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: id\nSample values: ['206526266', '202537962', '201692695', '208294727', '207959750']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "afc243ef2d5b07b26724c8762adff60ec2d2e7cd8a59d0ba957bffdeddcf2c00": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: name\nSample values: ['LG XL Capacity Electric Dryer', 'Toshiba SD-6100 DVD Player', 'Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', \"Toshiba 22LV505 - 22' Widescreen LCD HDTV w/ Built-in DVD Pl\", \"Panasonic Viera TH-46PZ850U 46' Plasma TV - TH46PZ850U\"]\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "c192ac383910ecfa822e7003cc7f7cbfa58a9d28a751df551ec151c058a47961": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: ['Micro Cut - 7 Per Pass', 'Plastic - Aqua', '15 lb', 'SIRIUS SP5TK1 Sportster 5 Dock & Play Radio with Car Kit', 'Keyboard - Wireless - 104 Keys - Mouse - Laser - Type A - US']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "9bdaf895c8b2ed8d5eed69982a1de8d716f29cc761d71f450b6903863d7ddeec": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: manufacturer\nSample values: ['Contour', 'Canon', 'Nintendo Of America', 'Techcraft', 'Panasonic']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "e5fd194dfaa622a08a7154781754dc8d7d9ad3c646956ec3112d25fbffaf9038": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: price\nSample values: ['$279.00', '$668.75', '$17.45', '$21.05', '$41.46']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "3fbf72f329841dbbae10ec9790fa2e3fef7a3806a4a86023aef6922293f5fc36": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: id\nSample values: ['b000i3ec9y', 'b000ndicze', 'b0001wn18u', 'b000922dwc', 'b000qgixde']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "e0f7a129f9cb3bff62226f9ac157401dc172a713dabad56207108e357295e682": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: title\nSample values: ['tonka search & rescue 2', 'symantec mail security for smtp 5.0 smb av cd 5u gov', 'pc cakewalk guitar tracks pro 3', 'microsoft entertainment pack ce', 'pinnacle studio plus titanium edition v10.5']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "6fa0e61b5da5b7e2fb89a9291f6586361e7aa06c0959820639738a619df8714c": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: ['terminal server lets you deliver windows-based applications ', 'cyberchase adventures: carnival chaos/casablanca quest makes', 'hop q*bert around the board while avoiding coily ugg wrongwa', 'black & white platinum gives you the opportunity to become a', 'ae mappoint 2006 cd']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "40976f2f73bcf131291314b03e81ee3d02ba32d3c2b5dce137ed78533d2e5f9e": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: manufacturer\nSample values: ['dreamcatcher interactive', 'palo alto software', 'allume', 'warner new media', 'ubi soft']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "5abc374f05424ca7715b0887de5c0ec4a33f8277ac68598f3511ea89975b066e": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: price\nSample values: ['200.0', '14.99', '809.0', '1445.9', '50.88']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "6eda727a97154f6176582b45c94625067be84b04c4d479ab81e1847bcdc5b137": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: id\nSample values: ['http://www.google.com/base/feeds/snippets/217285540933413619', 'http://www.google.com/base/feeds/snippets/664583851664456402', 'http://www.google.com/base/feeds/snippets/172635017710638788', 'http://www.google.com/base/feeds/snippets/183439590756314035', 'http://www.google.com/base/feeds/snippets/180552893119004077']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "2b4e8324bf374dec84ddcd024cf38d92ac3be7ff066718027516b9e328ac850d": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: name\nSample values: ['eidos interactive 40022 tomb raider: legend ds 788687400220', 'corel corporation dvd movie factory 6 plus retial (english)', 'adobe indesign cs3 for mac', 'topics entertainment snap! hair styler studio', '11105093 symantec web security for microsoft isa server 2004']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "0102adcd03766aaca19aa766947602f50ef175db268daee74ae9ca2b17c8b5b0": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: description\nSample values: ['book and cd-rom: exploring photoshop by annesa hartman at la', 'agatha christies world-famous novel and then there were none', 'new! version 22. everything you need to create fantastic pri', 'record restore and burn: magix audio cleaning lab 10 is the ', 'microsoft office pro 2004 software suite - mac microsoft off']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "description"
+  }
+ },
+ "d4698498620295c359a70d12c4ac4c6baf7a825192169706f9a3820b85362b5d": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: manufacturer\nSample values: ['adobe systems inc', 'autodesk psg', 'sony creative software', 'ibm software lotus shrinkwrap', 'nova development']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "a98b15171946a31d30b35442ebc2669e4460238a3b3fcc182465170fa379e2b5": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: price\nSample values: ['348.97', '268.2', '599.95', '31.98', '86875.58']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "price"
+  }
+ },
+ "f28533ab27ceca4d535cf8c827c136221a7ba6840ab9d6f44a6033f1bffc04ea": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: code\nSample values: ['120876131', '800200008', '1953008327', '1000013594', '474032378']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "e9120ab359d46651191476607a95d0ef9427d687ffad373db9fec2ab7d57ab05": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: url\nSample values: ['http://world-en.openfoodfacts.org/product/0000120810084/komb', 'http://world-en.openfoodfacts.org/product/0000800200004/tonn', 'http://world-en.openfoodfacts.org/product/0001953008327/bio-', 'http://world-en.openfoodfacts.org/product/0001000013127/lemo', 'http://world-en.openfoodfacts.org/product/0000474013452']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "c89b39139da9e40531b19d2e4718b2c0e3ec2e0fd2e7e82d048f8cc5db57a054": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: creator\nSample values: ['guguseli9', 'scharmed', 'kaumzug', 'predatorix', 'dapryor']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "51267a27333b73d56efa8c3e52800b6fd731c15dc67eb19faf73db4d7d0bdbd6": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: created_t\nSample values: ['1642519373', '1667580035', '1631879641', '1539603306', '1666031026']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "f5cefb531b276592a58e0118d8d2176be945f1f99d38c738d565e6f27c407dc7": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_name\nSample values: ['Galletas integrales', 'Lamp lawarma', 'Wafers', 'Porridge To go', 'Bowl-fulls chicken bacon ranch pasta medium']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "01261cf69236b984a63744121d8539bbdfb7115953d639e0b11f278cc53fd547": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: quantity\nSample values: ['3 kg', 'Taxas', '15', '112g', '620 g']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "quantity"
+  }
+ },
+ "a6427ec8b3a3429165d35ffd6a2a5509ef87c94a20726613237bb0004f6ee4fc": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: packaging\nSample values: ['200 g', 'fresh', 'Étuis de 2 biscuits', 'Bocal', 'Métal, Acier']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "da03d3c226c43d2ee97bc94e9dbf916f3be99c3c406ab2067fc7387ed3787e52": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: brands\nSample values: ['EATALIAN', 'Fco. Montes e Hijos', 'Plus', 'SFT', 'WHSmith']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "ccdb83287f5d921df4e0ccd8e25df19992a6e68e50278d49de95bc6ba7df5fd1": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: categories\nSample values: ['Cooking helpers', 'Snacks, Sweet snacks, Cocoa and its products, Confectionerie', '150mg', 'Potato crisps', 'Compléments alimentaires, it:Bevande Isotoniche']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "category"
+  }
+ },
+ "9b0e4b48ccb364f7291f3152519e1fa4e48a1c9a87ce8a5cff4f4d0798fc2092": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: labels\nSample values: ['Sans colorants', 'Vegetarian, Vegan, Nutriscore, en:nutriscore-grade-a', 'Bio, Bio européen, Commerce équitable, IT-BIO-014, Symbole d', 'Organic, EU Organic, AB Agriculture Biologique, en:no-gluten', 'Yes']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "b39bd46b127efa30f39a24c91af6e9e623d66b1c7ba2c73ddf8ce0f282a6a264": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: countries\nSample values: ['en:Australia', 'en:uzbekistan', 'en:Paraguay', 'France, UK', 'Schweiz, Germany']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "f7aaee622904fb7886d19a8b3959774436442f4748689aa558253a85f4a0c5f6": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: ingredients_text\nSample values: [\"Viande bovine [origine : France] 76%, eau, viande d'agneau [\", 'fortified wheat flour (wheat flour, calcium carbonate, iron,', 'SALSA HOT SALSA Energy Fat alg', 'Cultured skim milk, cream, salt', 'Catilyb dbags Fibre Protein S COOKED LONG GRAIN RICE (86%) (']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "0818a2e2446a5e4337c267cdc3d621b144f2025dabb819a8efc5c996cbfc1332": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: serving_size\nSample values: ['84g', '425.0g', '1 portion (405 g)', '4 scoops (128 g)', '1000.0g']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "b1f48c3e4357686d7502b06e273a3d40d0c4992c6c56ed4f786a5bb1e04ed66e": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: nutriscore_grade\nSample values: ['unknown', 'c', 'd', 'a', 'e']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "ac24f2245ae2f30da6942cc8da0e22adc3f0ddfc6db5fd7ec30031f541ea0324": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: stores\nSample values: ['Amazon.ca', 'Boutique Famille Mary du marché de Saint-Nazaire', 'Alfamart,Indomart', 'Biocoop', 'La Vie Claire']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ },
+ "2ae6424029427c124dc60c4ada5a4a3ccdfa3db11fd84d64f3b69540367c9d47": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: code\nSample values: ['0748927066692', '8902901031577', '8901058001051', '8903023281727', '8906059637605']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "id"
+  }
+ },
+ "56f90ba0970cabafe6d7a781dc50a3b2e3f37689fcef84db4ed5e9267d9b3e0d": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: product_name\nSample values: ['Nature cool oil', 'It lal mirch 50g', 'Good Life rajma chitra 500g', 'Continental This is Caramel coffee', 'coconut oil']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "product_name"
+  }
+ },
+ "2f47c9aa5c4b1fe04aedd5e421951ebb854a3000c6b0e02b20676dc4cd8617c6": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: brands\nSample values: ['United Breweries', 'Nutricia,Danone', 'apis', 'Sri Bhagyalakshmi', 'Ching']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "brand"
+  }
+ },
+ "9f132387526524cf2bf3d18366a9e9742c461df223b5eadbe35f91855fcdaca7": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: categories\nSample values: ['Whole fenugreek seeds', 'Toned milk', 'Codliver fats', 'Cereal flakes', 'Beverages, Waters, Drinking water']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "category"
+  }
+ },
+ "4820a564e3609f3d29f641fa7b9bab96431bad1ad64c8e627dddec9e1d4f01a5": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: quantity\nSample values: ['37 g', '14.95g', '34grams', '125ml', '99g']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "quantity"
+  }
+ },
+ "d7b34eeb91fa28c9885aca62463a7ccb62760b63f008e775dd18adbd8e43dd89": {
+  "model": "qwen3:8b",
+  "prompt": "Schema fields:\n- product_name: product name or title of the item, e.g. Amul Butter 500 g, Sony Turntable PSLX350H\n- brand: brand or manufacturer of the product, e.g. Amul, Sony, Nestle\n- category: product category or department, e.g. Beverages, Electronics, Clothing\n- sub_category: product sub-category, a finer category inside a category, e.g. Tea, Hair Care\n- price: selling price or discounted price actually charged, a number like 49.5\n- mrp: maximum retail price, list price or market price before discount, a number\n- quantity: pack size or net quantity with unit, e.g. 500 g, 1 l, 6 pcs\n- description: long free-text description of the product and its features\n- rating: customer rating or review score, e.g. 4.2 out of 5\n- id: unique identifier, code, SKU or barcode of the record\n- other: other metadata such as url, image link, timestamp, creator, packaging, country, labels, nutrition grade, ingredients or specifications\n\nColumn header: countries_tags\nSample values: ['en:croatia,en:france,en:germany,en:india,en:lithuania,en:net', 'en:belgium,en:india', 'en:india,en:south-africa', 'en:france,en:india,en:reunion,fr:france-la-reunion', 'en:australia,en:austria,en:belgium,en:france,en:germany,en:i']\n\nWhich schema field does this column hold? Use 'other' if none fits.",
+  "response": {
+   "field": "other"
+  }
+ }
+}

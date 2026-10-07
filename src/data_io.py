@@ -22,9 +22,11 @@ def _single_csv(folder: Path) -> Path:
 
 # ---------- working data (Indian retail) ----------
 
-def load_bigbasket() -> pd.DataFrame:
+def load_bigbasket(keep_index: bool = False) -> pd.DataFrame:
     df = pd.read_csv(_single_csv(RAW / "bigbasket"))
-    # the Kaggle file has an unnamed/`index` column that is just the row number
+    # the Kaggle file has an `index` column that is just the row number (1..n)
+    if keep_index:
+        return df
     return df.drop(columns=[c for c in df.columns if c.lower() in ("index", "unnamed: 0")])
 
 
@@ -46,6 +48,13 @@ def load_off_india() -> pd.DataFrame:
     if len(df) and not isinstance(df["product_name"].dropna().iloc[0], str):
         df["product_name"] = df["product_name"].apply(pick_name)
     return df
+
+
+def load_off_sample() -> pd.DataFrame:
+    """First ~12.7k rows of the full Open Food Facts export with all 211 original columns
+    (only used to test column mapping on OFF's real, messy header)."""
+    return pd.read_csv(RAW / "off_sample.tsv", sep="\t", quoting=3, on_bad_lines="skip",
+                       low_memory=False)
 
 
 # ---------- benchmarks with gold labels ----------

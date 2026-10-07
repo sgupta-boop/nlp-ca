@@ -1,0 +1,60 @@
+source,header,gold_field,cluster_text,note
+bigbasket,index,id,0,row number used as the record id
+bigbasket,product,product_name,1,
+bigbasket,category,category,0,
+bigbasket,sub_category,sub_category,0,
+bigbasket,brand,brand,0,
+bigbasket,sale_price,price,0,price actually charged
+bigbasket,market_price,mrp,0,printed maximum retail price
+bigbasket,type,other,0,third-level product type; the schema has no slot for it
+bigbasket,rating,rating,0,
+bigbasket,description,description,1,
+flipkart,uniq_id,id,0,
+flipkart,crawl_timestamp,other,0,
+flipkart,product_url,other,0,
+flipkart,product_name,product_name,1,
+flipkart,product_category_tree,category,0,category path; first level is the category
+flipkart,pid,id,0,Flipkart product id
+flipkart,retail_price,mrp,0,list price before discount
+flipkart,discounted_price,price,0,price actually charged
+flipkart,image,other,0,
+flipkart,is_FK_Advantage_product,other,0,
+flipkart,description,description,1,
+flipkart,product_rating,rating,0,
+flipkart,overall_rating,rating,0,
+flipkart,brand,brand,0,
+flipkart,product_specifications,other,0,key-value spec blob
+abt,id,id,0,
+abt,name,product_name,1,
+abt,description,description,1,
+abt,price,price,0,
+buy,id,id,0,
+buy,name,product_name,1,
+buy,description,description,1,
+buy,manufacturer,brand,0,
+buy,price,price,0,
+amazon,id,id,0,
+amazon,title,product_name,1,
+amazon,description,description,1,
+amazon,manufacturer,brand,0,
+amazon,price,price,0,
+google,id,id,0,
+google,name,product_name,1,
+google,description,description,1,
+google,manufacturer,brand,0,
+google,price,price,0,
+off,code,id,0,barcode
+off,url,other,0,
+off,creator,other,0,
+off,created_t,other,0,unix timestamp
+off,product_name,product_name,1,
+off,quantity,quantity,0,
+off,packaging,other,0,
+off,brands,brand,0,
+off,categories,category,0,
+off,labels,other,0,
+off,countries,other,0,
+off,ingredients_text,other,0,ingredient list; not a product description
+off,serving_size,other,0,serving size is not the pack quantity
+off,nutriscore_grade,other,0,
+off,stores,other,0,
