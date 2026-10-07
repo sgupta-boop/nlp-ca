@@ -1,0 +1,598 @@
+id,attribute,raw,gold,kind,ours,ours_strict,ok_strict,baseline_number,ok_ours,ok_raw,ok_baseline
+2632,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+2632,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+34880,Capacity,"up to 9-1/2"" round plates or up to 8"" square plates, 5 columns","up to 9-1/2"" round plates or up to 8"" square plates, 5 columns",named,"up to 9-1/2"" round plates or up to 8"" square plates, 5 columns",,False,9,True,True,False
+49007,Height,"3-5/8""",9.2,length,9.2,9.2,True,3,True,False,False
+49007,Width,"3-1/2""",8.9,length,8.9,8.9,True,3,True,False,False
+94932,Cache,2MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+94932,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+114604,Depth,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+114604,Height,"43.75""",111.1,length,111.1,111.1,True,43.75,True,False,False
+114604,Width,"29.8125""",75.7,length,75.7,75.7,True,29.8125,True,False,False
+235120,Pack Quantity,24/Box,24,count,24,24,True,24,True,False,True
+253291,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+274055,Height,36,91.4,length,91.4,91.4,True,36,True,False,False
+274055,Pack Quantity,4 per Carton,4,count,4,4,True,4,True,False,True
+274055,Width,48,121.9,length,121.9,121.9,True,48,True,False,False
+313716,Cache,2MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+352525,Pack Quantity,1,1,count,1,1,True,1,True,True,True
+446886,Cache,4MB,4 Megabytes,named,4 Megabytes,4 Megabytes,True,4,True,False,False
+468895,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+470313,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+470313,Length,"120""",304.8,length,304.8,304.8,True,120,True,False,False
+470313,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+477160,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+477160,Pack Quantity,50 Forms,50,count,50,50,True,50,True,False,True
+477160,Width,8 1/2,21.6,length,21.6,21.6,True,8,True,False,False
+547326,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+547326,Pack Quantity,1 each,1,count,1,1,True,1,True,False,True
+547326,Width,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+766211,Capacity,14 place settings,14 place settings,named,14 place settings,,False,14,True,True,False
+768469,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+873788,Height,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+873788,Width,"11-3/5""",29.5,length,29.5,29.5,True,11,True,False,False
+1000211,Height,6,15.2,length,15.2,15.2,True,6,True,False,False
+1000211,Width,3 1/2,8.9,length,8.9,8.9,True,3,True,False,False
+1123555,Height,"70""",177.8,length,177.8,177.8,True,70,True,False,False
+1123555,Length,"42""",106.7,length,106.7,106.7,True,42,True,False,False
+1123555,Width,"42""",106.7,length,106.7,106.7,True,42,True,False,False
+1127297,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+1177895,Cache,1G,1 Gigabytes,named,1 Gigabytes,1 Gigabytes,True,1,True,False,False
+1321491,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+1325318,Depth,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+1325318,Length,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+1325318,Width,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+1352812,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+1380361,Capacity,1GB,1 Gigabytes,named,1 Gigabytes,1 Gigabytes,True,1,True,False,False
+1730649,Height,5,12.7,length,12.7,12.7,True,5,True,False,False
+1730649,Pack Quantity,400 Forms,400,count,400,400,True,400,True,False,True
+1730649,Width,2 3/4,7.0,length,7.0,7.0,True,2,True,False,False
+1766615,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+1812084,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+1874974,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+1956232,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+1986897,Depth,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+1986897,Height,"12""",30.5,length,30.5,30.5,True,12,True,False,False
+1986897,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+2053372,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+2053372,Width,8-1/2,21.6,length,21.6,21.6,True,8,True,False,False
+2055753,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+2125823,Pack Quantity,36,36,count,36,36,True,36,True,True,True
+2125823,Size/Weight,2.5 oz,71,weight_g,71,71,True,2.5,True,False,False
+2189423,Cache,24MB,24 Megabytes,named,24 Megabytes,24 Megabytes,True,24,True,False,False
+2385441,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+2471182,Length,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+2471182,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+2519383,Pack Quantity,16/Box,16,count,16,16,True,16,True,False,True
+2519383,Size/Weight,1.3oz,37,weight_g,37,37,True,1.3,True,False,False
+2723727,Height,2 3/8,6.0,length,6.0,6.0,True,2,True,False,False
+2723727,Pack Quantity,"1,000/Box",1000,count,1000,1000,True,1,True,False,False
+2723727,Width,4 3/4,12.1,length,12.1,12.1,True,4,True,False,False
+2744017,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+2744017,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+2911801,Height,"72""",182.9,length,182.9,182.9,True,72,True,False,False
+2911801,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+2911801,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+2950611,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+2950611,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+2954954,Pack Quantity,6 each per case,6,count,6,6,True,6,True,False,True
+2954954,Size/Weight,11-1/2 oz.,326,weight_g,326,326,True,11,True,False,False
+3014499,Depth,10-1/8,25.7,length,25.7,25.7,True,10,True,False,False
+3014499,Height,1-1/8,2.9,length,2.9,2.9,True,1,True,False,False
+3014499,Width,6-1/4,15.9,length,15.9,15.9,True,6,True,False,False
+3048276,Depth,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+3048276,Width,"144""",365.8,length,365.8,365.8,True,144,True,False,False
+3163278,Pack Quantity,200 Pairs,200,count,200,200,True,200,True,False,True
+3192513,Length,"236""",599.4,length,599.4,599.4,True,236,True,False,False
+3192513,Width,"1/5""",0.5,length,0.5,0.5,True,1,True,False,False
+3220406,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+3220406,Length,"53""",134.6,length,134.6,134.6,True,53,True,False,False
+3220406,Width,"29""",73.7,length,73.7,73.7,True,29,True,False,False
+3254941,Pack Quantity,15/Box,15,count,15,15,True,15,True,False,True
+3254941,Size/Weight,1.32 oz.,37,weight_g,37,37,True,1.32,True,False,False
+3323925,Capacity,16 lbs.,16 lbs.,named,16 lbs.,,False,16,True,True,False
+3323925,Depth,"10""",25.4,length,25.4,25.4,True,10,True,False,False
+3323925,Pack Quantity,1 per pack,1,count,1,1,True,1,True,False,True
+3323925,Width,"28""",71.1,length,71.1,71.1,True,28,True,False,False
+3409779,Cache,1024K,1024 Kilobytes,named,1024 Kilobytes,1024 Kilobytes,True,1024,True,False,False
+3425944,Height,3,7.6,length,7.6,7.6,True,3,True,False,False
+3425944,Width,3,7.6,length,7.6,7.6,True,3,True,False,False
+3476894,Height,29-1/2,74.9,length,74.9,74.9,True,29,True,False,False
+3513633,Capacity,24 bun,24 bun,named,24 bun,,False,24,True,True,False
+3513633,Depth,"17.5""",44.5,length,44.5,44.5,True,17.5,True,False,False
+3513633,Width,"18.5""",47.0,length,47.0,47.0,True,18.5,True,False,False
+3525510,Cache,12MB,12 Megabytes,named,12 Megabytes,12 Megabytes,True,12,True,False,False
+3538629,Height,"7-1/2""",19.1,length,19.1,19.1,True,7,True,False,False
+3538629,Length,"19-3/4""",50.2,length,50.2,50.2,True,19,True,False,False
+3538629,Width,"19-3/4""",50.2,length,50.2,50.2,True,19,True,False,False
+3571664,Length,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+3676337,Depth,"25""",63.5,length,63.5,63.5,True,25,True,False,False
+3676337,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+3689591,Pack Quantity,6/Box,6,count,6,6,True,6,True,False,True
+3689591,Size/Weight,4/5 oz,23,weight_g,23,23,True,4,True,False,False
+3701533,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+3727055,Cache,2GB,2 Gigabytes,named,2 Gigabytes,2 Gigabytes,True,2,True,False,False
+3808343,Cache,512K,512 Kilobytes,named,512 Kilobytes,512 Kilobytes,True,512,True,False,False
+3808343,Capacity,128MB,128 Megabytes,named,128 Megabytes,128 Megabytes,True,128,True,False,False
+3858683,Depth,22,55.9,length,55.9,55.9,True,22,True,False,False
+3858683,Height,28,71.1,length,71.1,71.1,True,28,True,False,False
+3858683,Width,16,40.6,length,40.6,40.6,True,16,True,False,False
+4000891,Height,"70-1/2""",179.1,length,179.1,179.1,True,70,True,False,False
+4000891,Length,"85-1/8""",216.2,length,216.2,216.2,True,85,True,False,False
+4000891,Width,"33-1/2""",85.1,length,85.1,85.1,True,33,True,False,False
+4020088,Depth,"8 3/4""",22.2,length,22.2,22.2,True,8,True,False,False
+4020088,Height,"5""",12.7,length,12.7,12.7,True,5,True,False,False
+4020088,Pack Quantity,1 each,1,count,1,1,True,1,True,False,True
+4020088,Width,"10""",25.4,length,25.4,25.4,True,10,True,False,False
+4026867,Capacity,1 gal.,1 gal.,named,1 gal.,,False,1,True,True,False
+4115749,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+4142393,Capacity,10 Sheets,10 Sheets,named,10 Sheets,,False,10,True,True,False
+4142393,Depth,"17 1/4""",43.8,length,43.8,43.8,True,17,True,False,False
+4142393,Pack Quantity,10 Sheets,10,count,10,10,True,10,True,False,True
+4142393,Width,"12 1/4""",31.1,length,31.1,31.1,True,12,True,False,False
+4145062,Capacity,9 gallon,9 gallon,named,9 gallon,,False,9,True,True,False
+4145062,Height,"32""",81.3,length,81.3,81.3,True,32,True,False,False
+4145062,Length,"9""",22.9,length,22.9,22.9,True,9,True,False,False
+4145062,Width,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+4250703,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+4325649,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+4405251,Cache,512,512 Megabytes,named,512,,False,512,False,False,False
+4437900,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+4439188,Depth,12-5/8,32.1,length,32.1,32.1,True,12,True,False,False
+4439188,Height,81-1/8,206.1,length,206.1,206.1,True,81,True,False,False
+4439188,Width,34-1/2,87.6,length,87.6,87.6,True,34,True,False,False
+4459781,Height,9 1/4,23.5,length,23.5,23.5,True,9,True,False,False
+4459781,Pack Quantity,96 Sheets,96,count,96,96,True,96,True,False,True
+4459781,Width,7 1/4,18.4,length,18.4,18.4,True,7,True,False,False
+4474604,Depth,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+4474604,Width,"120""",304.8,length,304.8,304.8,True,120,True,False,False
+4479940,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+4531914,Height,36,91.4,length,91.4,91.4,True,36,True,False,False
+4531914,Width,24,61.0,length,61.0,61.0,True,24,True,False,False
+4571146,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+4605098,Capacity,120,120,named,120,,False,120,True,True,True
+4605098,Height,3 1/2,8.9,length,8.9,8.9,True,3,True,False,False
+4605098,Width,2,5.1,length,5.1,5.1,True,2,True,False,False
+4637957,Cache,512K,512 Kilobytes,named,512 Kilobytes,512 Kilobytes,True,512,True,False,False
+4643324,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+4643324,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+4662004,Size/Weight,16.9 oz,479,weight_g,479,479,True,16.9,True,False,False
+4704864,Length,"59""",149.9,length,149.9,149.9,True,59,True,False,False
+4745179,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+4919222,Pack Quantity,12-Cup,12,count,12,12,True,12,True,False,True
+4934275,Length,"1000""",2540.0,length,2540.0,2540.0,True,1000,True,False,False
+4934275,Pack Quantity,24/Pack,24,count,24,24,True,24,True,False,True
+4934275,Width,"3/4""",1.9,length,1.9,1.9,True,3,True,False,False
+4938960,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+4938960,Pack Quantity,25/Pack,25,count,25,25,True,25,True,False,True
+4938960,Width,8 1/2,21.6,length,21.6,21.6,True,8,True,False,False
+4976497,Pack Quantity,8 per Carton,8,count,8,8,True,8,True,False,True
+4976497,Size/Weight,22 oz,624,weight_g,624,624,True,22,True,False,False
+4982437,Depth,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+5036365,Capacity,"1/2"" letter size paper","1/2"" letter size paper",named,"1/2"" letter size paper",,False,1,True,True,False
+5061601,Pack Quantity,100 Cards per Polypack,100,count,100,100,True,100,True,False,True
+5065139,Length,262 ft,7985.8,length,7985.8,7985.8,True,262,True,False,False
+5065139,Width,7.87,20.0,length,20.0,20.0,True,7.87,True,False,False
+5110198,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+5177554,Rotational Speed,5.4K,5400,speed,5400,5400,True,5.4,True,False,False
+5244759,Capacity,128MB,128 Megabytes,named,128 Megabytes,128 Megabytes,True,128,True,False,False
+5271698,Capacity,up to (3) stacked sheet pan carriers,up to (3) stacked sheet pan carriers,named,up to (3) stacked sheet pan carriers,,False,3,True,True,False
+5277580,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+5308583,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+5345481,Capacity,400GB Native/800GB Compressed,400GB Native/800GB Compressed,named,400 Gigabytes,400 Gigabytes,False,400,False,True,False
+5345481,Length,2200ft,67056.0,length,67056.0,67056.0,True,2200,True,False,False
+5345481,Width,"1/2""",1.3,length,1.3,1.3,True,1,True,False,False
+5623331,Depth,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+5623331,Length,"109"" - 120""",304.8,length,276.9,276.9,False,109,False,False,False
+5623331,Width,"120""",304.8,length,304.8,304.8,True,120,True,False,False
+5659426,Depth,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+5659426,Width,"108""",274.3,length,274.3,274.3,True,108,True,False,False
+5764150,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+5789716,Depth,12,30.5,length,30.5,30.5,True,12,True,False,False
+5789716,Height,1-1/2,3.8,length,3.8,3.8,True,1,True,False,False
+5789716,Width,10,25.4,length,25.4,25.4,True,10,True,False,False
+5821239,Capacity,400 lbs. per shelf,400 lbs. per shelf,named,400 lbs. per shelf,,False,400,True,True,False
+5821239,Depth,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+5821239,Height,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+5821239,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+5945034,Capacity,0.9 cu. ft.,0.9 cu. ft.,named,0.9 cu. ft.,,False,0.9,True,True,False
+6036177,Height,8,20.3,length,20.3,20.3,True,8,True,False,False
+6036177,Width,4 7/8,12.4,length,12.4,12.4,True,4,True,False,False
+6054872,Capacity,40 gallon,40 gallon,named,40 gallon,,False,40,True,True,False
+6054872,Height,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+6054872,Width,"19""",48.3,length,48.3,48.3,True,19,True,False,False
+6102315,Height,"7/16""",1.1,length,1.1,1.1,True,7,True,False,False
+6102315,Pack Quantity,104/Pack,104,count,104,104,True,104,True,False,True
+6188539,Capacity,32MB,32 Megabytes,named,32 Megabytes,32 Megabytes,True,32,True,False,False
+6192004,Capacity,2700W,2700 Watts,named,2700 Watts,2700 Watts,True,2700,True,False,False
+6239952,Pack Quantity,100/Box,100,count,100,100,True,100,True,False,True
+6244455,Depth,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+6244455,Width,"144""",365.8,length,365.8,365.8,True,144,True,False,False
+6306914,Depth,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+6306914,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+6333105,Height,17,43.2,length,43.2,43.2,True,17,True,False,False
+6333105,Width,12,30.5,length,30.5,30.5,True,12,True,False,False
+6367228,Capacity,25 sheets,25 sheets,named,25 sheets,,False,25,True,True,False
+6367228,Pack Quantity,Five dividers per pack,5,count,Five dividers per pack,,False,,False,False,False
+6384756,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+6392651,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+6410722,Pack Quantity,1 each,1,count,1,1,True,1,True,False,True
+6468927,Height,9,22.9,length,22.9,22.9,True,9,True,False,False
+6468927,Pack Quantity,60 Sheets,60,count,60,60,True,60,True,False,True
+6468927,Width,6,15.2,length,15.2,15.2,True,6,True,False,False
+6509139,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+6564085,Depth,"23.5""",59.7,length,59.7,59.7,True,23.5,True,False,False
+6564085,Width,"46.5""",118.1,length,118.1,118.1,True,46.5,True,False,False
+6612553,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+6687945,Height,"34""",86.4,length,86.4,86.4,True,34,True,False,False
+6687945,Length,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+6687945,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+6700310,Cache,8MB,8 Megabytes,named,8 Megabytes,8 Megabytes,True,8,True,False,False
+6727030,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+6937689,Cache,2MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+7122902,Length,21.8yds,1993.4,length,1993.4,1993.4,True,21.8,True,False,False
+7122902,Width,"1.88""",4.8,length,4.8,4.8,True,1.88,True,False,False
+7230884,Cache,8MB-2x4MB,8 Megabytes,named,8 Megabytes,8 Megabytes,True,8,True,False,False
+7276549,Height,"8-1/2""",21.6,length,21.6,21.6,True,8,True,False,False
+7276549,Width,"5-7/8""",14.9,length,14.9,14.9,True,5,True,False,False
+7350720,Depth,"5""",12.7,length,12.7,12.7,True,5,True,False,False
+7350720,Height,"11""",27.9,length,27.9,27.9,True,11,True,False,False
+7558748,Capacity,2.2 gallon/8 liter,2.2 gallon/8 liter,named,2.2 gallon/8 liter,,False,2.2,True,True,False
+7596390,Capacity,1491-lb production/24 hours,1491-lb production/24 hours,named,1491-lb production/24 hours,,False,1491,True,True,False
+7604047,Cache,10MB,10 Megabytes,named,10 Megabytes,10 Megabytes,True,10,True,False,False
+7764333,Pack Quantity,trio,3,count,trio,,False,,False,False,False
+7764333,Size/Weight,5in,5in,weight_g,5in,,False,5,True,True,False
+7769272,Height,5,12.7,length,12.7,12.7,True,5,True,False,False
+7769272,Pack Quantity,"4,000/Carton",4000,count,4000,4000,True,4,True,False,False
+7769272,Width,3,7.6,length,7.6,7.6,True,3,True,False,False
+7780646,Depth,4,10.2,length,10.2,10.2,True,4,True,False,False
+7780646,Height,7,17.8,length,17.8,17.8,True,7,True,False,False
+7780646,Width,13,33.0,length,33.0,33.0,True,13,True,False,False
+7799842,Capacity,13 gal,13 gal,named,13 gal,,False,13,True,True,False
+7827226,Depth,"13-3/4""",34.9,length,34.9,34.9,True,13,True,False,False
+7827226,Height,"11-3/4""",29.8,length,29.8,29.8,True,11,True,False,False
+7827226,Length,"19-3/4""",50.2,length,50.2,50.2,True,19,True,False,False
+7827226,Width,"10""",25.4,length,25.4,25.4,True,10,True,False,False
+7832677,Pack Quantity,3,3,count,3,3,True,3,True,True,True
+7872811,Length,3 9/10,9.9,length,9.9,9.9,True,3,True,False,False
+7872811,Pack Quantity,20/Carton,20,count,20,20,True,20,True,False,True
+7872811,Width,5 1/2,14.0,length,14.0,14.0,True,5,True,False,False
+7955720,Pack Quantity,1 each,1,count,1,1,True,1,True,False,True
+7979318,Capacity,One 100 Count Roll,One 100 Count Roll,named,One 100 Count Roll,,False,100,True,True,False
+7979318,Height,"1 11/16""",4.3,length,4.3,4.3,True,1,True,False,False
+7979318,Width,"2""",5.1,length,5.1,5.1,True,2,True,False,False
+7979927,Depth,"96""",243.8,length,243.8,243.8,True,96,True,False,False
+7979927,Length,"96""",243.8,length,243.8,243.8,True,96,True,False,False
+8089922,Capacity,6-Piece,6-Piece,named,6-Piece,,False,6,True,True,False
+8389577,Cache,16MB,16 Megabytes,named,16 Megabytes,16 Megabytes,True,16,True,False,False
+8413474,Height,"11-3/4""",29.8,length,29.8,29.8,True,11,True,False,False
+8413474,Width,"3-1/8""",7.9,length,7.9,7.9,True,3,True,False,False
+8430798,Height,16,40.6,length,40.6,40.6,True,16,True,False,False
+8430798,Width,24,61.0,length,61.0,61.0,True,24,True,False,False
+8587501,Capacity,(2) 40 pound tanks,(2) 40 pound tanks,named,(2) 40 pound tanks,,False,2,True,True,False
+8587501,Length,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+8630210,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+8632895,Length,"120""",304.8,length,304.8,304.8,True,120,True,False,False
+8641667,Capacity,5 gallon,5 gallon,named,5 gallon,,False,5,True,True,False
+8641667,Depth,"16-1/2""",41.9,length,41.9,41.9,True,16,True,False,False
+8641667,Height,"24-1/4""",61.6,length,61.6,61.6,True,24,True,False,False
+8641667,Width,"9""",22.9,length,22.9,22.9,True,9,True,False,False
+8732257,Depth,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+8732257,Length,"54"" - 62""",157.5,length,137.2,137.2,False,54,False,False,False
+8732257,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+8753285,Capacity,120-lb,120-lb,named,120-lb,,False,120,True,True,False
+8753285,Depth,"21""",53.3,length,53.3,53.3,True,21,True,False,False
+8753285,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+8812958,Pack Quantity,30/Carton,30,count,30,30,True,30,True,False,True
+8812958,Size/Weight,1.1 oz/0.95 oz/1.1 oz,31,weight_g,31,31,True,1.1,True,False,False
+8850406,Capacity,28 qt.,28 qt.,named,28 qt.,,False,28,True,True,False
+8850406,Height,"15-5/16""",38.9,length,38.9,38.9,True,15,True,False,False
+8850406,Length,"14-1/2""",36.8,length,36.8,36.8,True,14,True,False,False
+8850406,Width,"10-1/2""",26.7,length,26.7,26.7,True,10,True,False,False
+8876423,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+8876423,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+8881850,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+8884218,Width,"72""",182.9,length,182.9,182.9,True,72,True,False,False
+8887734,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+8887734,Pack Quantity,1 set per box,1,count,1,1,True,1,True,False,True
+8887734,Width,8-1/2,21.6,length,21.6,21.6,True,8,True,False,False
+8899875,Cache,4MB,4 Megabytes,named,4 Megabytes,4 Megabytes,True,4,True,False,False
+8972708,Capacity,100/200GB,100/200 Gigabytes,named,100/200 Gigabytes,100/200 Gigabytes,True,100,True,False,False
+9072483,Height,10 1/2,26.7,length,26.7,26.7,True,10,True,False,False
+9072483,Pack Quantity,200 Sheets,200,count,200,200,True,200,True,False,True
+9072483,Paper Weight,15lb,6.8,weight_kg,6.8,6.8,True,15,True,False,False
+9072483,Width,8,20.3,length,20.3,20.3,True,8,True,False,False
+9107560,Cache,2MB-2X1MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+9154780,Height,24,61.0,length,61.0,61.0,True,24,True,False,False
+9154780,Width,36,91.4,length,91.4,91.4,True,36,True,False,False
+9254829,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+9263134,Length,"95""",241.3,length,241.3,241.3,True,95,True,False,False
+9288124,Capacity,1TB,1 Terabytes,named,1 Terabytes,1 Terabytes,True,1,True,False,False
+9288124,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+9290276,Height,9in,22.9,length,22.9,22.9,True,9,True,False,False
+9372770,Capacity,128MB,128 Megabytes,named,128 Megabytes,128 Megabytes,True,128,True,False,False
+9377640,Capacity,1861/1884 lb. capacity per 24 hours,1861/1884 lb. capacity per 24 hours,named,1861/1884 lb. capacity per 24 hours,,False,1861,True,True,False
+9426449,Depth,"17-7/8""",45.4,length,45.4,45.4,True,17,True,False,False
+9426449,Height,"33-1/4""",84.5,length,84.5,84.5,True,33,True,False,False
+9426449,Width,"39""",99.1,length,99.1,99.1,True,39,True,False,False
+9432188,Cache,2MB(2x1MB),2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+9541309,Capacity,20 sheets,20 sheets,named,20 sheets,,False,20,True,True,False
+9541309,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+9541309,Width,8-1/2,21.6,length,21.6,21.6,True,8,True,False,False
+9571516,Pack Quantity,6/Pack,6,count,6,6,True,6,True,False,True
+9621112,Height,3,7.6,length,7.6,7.6,True,3,True,False,False
+9621112,Width,3,7.6,length,7.6,7.6,True,3,True,False,False
+9667582,Cache,2MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+9667582,Capacity,2GB,2 Gigabytes,named,2 Gigabytes,2 Gigabytes,True,2,True,False,False
+9688103,Length,3 3/8,8.6,length,8.6,8.6,True,3,True,False,False
+9688103,Pack Quantity,25/Pack,25,count,25,25,True,25,True,False,True
+9688103,Width,2 1/8,5.4,length,5.4,5.4,True,2,True,False,False
+9698314,Depth,11 3/4,29.8,length,29.8,29.8,True,11,True,False,False
+9698314,Height,23 5/8,60.0,length,60.0,60.0,True,23,True,False,False
+9698314,Width,70 5/8,179.4,length,179.4,179.4,True,70,True,False,False
+9709766,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+9841731,Depth,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+9841731,Height,"10""",25.4,length,25.4,25.4,True,10,True,False,False
+9841731,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+9854474,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+9918780,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+9971274,Capacity,9.1GB,9.1 Gigabytes,named,9.1 Gigabytes,9.1 Gigabytes,True,9.1,True,False,False
+10028496,Cache,20MB,20 Megabytes,named,20 Megabytes,20 Megabytes,True,20,True,False,False
+10058143,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+10083013,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+10212781,Width,"60""",152.4,length,152.4,152.4,True,60,True,False,False
+10243570,Cache,1MB,1 Megabytes,named,1 Megabytes,1 Megabytes,True,1,True,False,False
+10265472,Capacity,96 (750 ml) bottles,96 (750 ml) bottles,named,96 (750 ml) bottles,,False,96,True,True,False
+10265472,Depth,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+10265472,Height,"54""",137.2,length,137.2,137.2,True,54,True,False,False
+10265472,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+10293201,Pack Quantity,22/Box,22,count,22,22,True,22,True,False,True
+10293201,Size/Weight,2.5oz,71,weight_g,71,71,True,2.5,True,False,False
+10336385,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+10348893,Capacity,32 gallon,32 gallon,named,32 gallon,,False,32,True,True,False
+10376089,Capacity,1GB,1 Gigabytes,named,1 Gigabytes,1 Gigabytes,True,1,True,False,False
+10379353,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+10414245,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+10414245,Pack Quantity,100/Pack,100,count,100,100,True,100,True,False,True
+10414245,Paper Weight,24 lbs.,10.9,weight_kg,10.9,10.9,True,24,True,False,False
+10414245,Width,8 1/2,21.6,length,21.6,21.6,True,8,True,False,False
+10457108,Depth,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+10457108,Length,"108""",274.3,length,274.3,274.3,True,108,True,False,False
+10457108,Width,"108""",274.3,length,274.3,274.3,True,108,True,False,False
+10498386,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+10556622,Capacity,(2) 1/2 barrel keg,(2) 1/2 barrel keg,named,(2) 1/2 barrel keg,,False,2,True,True,False
+10556622,Height,"34""",86.4,length,86.4,86.4,True,34,True,False,False
+10556622,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+10559177,Cache,2MB,2 Megabytes,named,2 Megabytes,2 Megabytes,True,2,True,False,False
+10576019,Pack Quantity,6 each per case,6,count,6,6,True,6,True,False,True
+10576019,Size/Weight,11 oz.,312,weight_g,312,312,True,11,True,False,False
+10708996,Pack Quantity,48/Carton,48,count,48,48,True,48,True,False,True
+10708996,Size/Weight,1.7 oz,48,weight_g,48,48,True,1.7,True,False,False
+10732260,Capacity,"1"" of letter size paper","1"" of letter size paper",named,"1"" of letter size paper",,False,1,True,True,False
+10737911,Cache,1MB,1 Megabytes,named,1 Megabytes,1 Megabytes,True,1,True,False,False
+10755188,Capacity,250 lbs per wheel,250 lbs per wheel,named,250 lbs per wheel,,False,250,True,True,False
+10831419,Cache,512KB,512 Kilobytes,named,512 Kilobytes,512 Kilobytes,True,512,True,False,False
+10886136,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+10889818,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+11042445,Size/Weight,16 oz,454,weight_g,454,454,True,16,True,False,False
+11042820,Depth,"10 15/16""",27.8,length,27.8,27.8,True,10,True,False,False
+11042820,Height,"2 1/2""",6.3,length,6.3,6.3,True,2,True,False,False
+11042820,Width,"14 13/16""",37.6,length,37.6,37.6,True,14,True,False,False
+11104273,Height,10 1/2,26.7,length,26.7,26.7,True,10,True,False,False
+11104273,Pack Quantity,100/Box,100,count,100,100,True,100,True,False,True
+11104273,Paper Weight,28lb,12.7,weight_kg,12.7,12.7,True,28,True,False,False
+11104273,Width,7 1/2,19.1,length,19.1,19.1,True,7,True,False,False
+11126145,Depth,"14""",35.6,length,35.6,35.6,True,14,True,False,False
+11126145,Length,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+11126145,Width,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+11156162,Pack Quantity,30 Packets/Box,30,count,30,30,True,30,True,False,True
+11161074,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+11162455,Depth,"28-1/4""",71.8,length,71.8,71.8,True,28,True,False,False
+11162455,Height,"10""",25.4,length,25.4,25.4,True,10,True,False,False
+11218434,Capacity,6GB,6 Gigabytes,named,6 Gigabytes,6 Gigabytes,True,6,True,False,False
+11264279,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+11306492,Capacity,1000 lb,1000 lb,named,1000 lb,,False,1000,True,True,False
+11306492,Length,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+11306492,Width,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+11398067,Height,"11""",27.9,length,27.9,27.9,True,11,True,False,False
+11398067,Width,"4-3/8""",11.1,length,11.1,11.1,True,4,True,False,False
+11614795,Capacity,64 oz.,64 oz.,named,64 oz.,,False,64,True,True,False
+11618863,Height,6In,15.2,length,15.2,15.2,True,6,True,False,False
+11618863,Pack Quantity,50 Sheet,50,count,50,50,True,50,True,False,True
+11618863,Width,4In,10.2,length,10.2,10.2,True,4,True,False,False
+11721426,Height,6,15.2,length,15.2,15.2,True,6,True,False,False
+11721426,Width,6,15.2,length,15.2,15.2,True,6,True,False,False
+11733122,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+11735133,Capacity,"1,200 lb.","1,200 lb.",named,"1,200 lb.",,False,1,True,True,False
+11735133,Length,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+11735133,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+11749982,Size/Weight,6in,6in,weight_g,6in,,False,6,True,True,False
+11762873,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+11767618,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+11823837,Capacity,400-card,400-card,named,400-card,,False,400,True,True,False
+11823837,Depth,"26 3/4""",67.9,length,67.9,67.9,True,26,True,False,False
+11823837,Height,"52""",132.1,length,132.1,132.1,True,52,True,False,False
+11823837,Width,"15""",38.1,length,38.1,38.1,True,15,True,False,False
+11834681,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+11853945,Capacity,33 Gallon,33 Gallon,named,33 Gallon,,False,33,True,True,False
+11853945,Height,"39""",99.1,length,99.1,99.1,True,39,True,False,False
+11853945,Width,"33""",83.8,length,83.8,83.8,True,33,True,False,False
+11876676,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+11876676,Length,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+11876676,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+11882570,Height,"40""",101.6,length,101.6,101.6,True,40,True,False,False
+11882570,Length,26,66.0,length,66.0,66.0,True,26,True,False,False
+11900385,Pack Quantity,50/Pack,50,count,50,50,True,50,True,False,True
+11900385,Size/Weight,16oz,454,weight_g,454,454,True,16,True,False,False
+11912126,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+11952227,Height,1/2,1.3,length,1.3,1.3,True,1,True,False,False
+11952227,Pack Quantity,66/Pack,66,count,66,66,True,66,True,False,True
+11970039,Pack Quantity,30/Carton,30,count,30,30,True,30,True,False,True
+11970039,Size/Weight,1.1 oz,31,weight_g,31,31,True,1.1,True,False,False
+12075509,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+12085629,Length,10,25.4,length,25.4,25.4,True,10,True,False,False
+12085629,Pack Quantity,50/Pack,50,count,50,50,True,50,True,False,True
+12085629,Width,5,12.7,length,12.7,12.7,True,5,True,False,False
+12160969,Height,18 1/2,47.0,length,47.0,47.0,True,18,True,False,False
+12160969,Pack Quantity,25/Pack,25,count,25,25,True,25,True,False,True
+12160969,Width,12 1/2,31.8,length,31.8,31.8,True,12,True,False,False
+12262378,Cache,512KB,512 Kilobytes,named,512 Kilobytes,512 Kilobytes,True,512,True,False,False
+12568847,Cache,512K,512 Kilobytes,named,512 Kilobytes,512 Kilobytes,True,512,True,False,False
+12568847,Capacity,512MB,512 Megabytes,named,512 Megabytes,512 Megabytes,True,512,True,False,False
+12627175,Height,12,30.5,length,30.5,30.5,True,12,True,False,False
+12627175,Pack Quantity,100/Box,100,count,100,100,True,100,True,False,True
+12627175,Paper Weight,28lb,12.7,weight_kg,12.7,12.7,True,28,True,False,False
+12627175,Width,10,25.4,length,25.4,25.4,True,10,True,False,False
+12634308,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+12793905,Depth,2 1/4,5.7,length,5.7,5.7,True,2,True,False,False
+12793905,Height,3,7.6,length,7.6,7.6,True,3,True,False,False
+12793905,Width,12,30.5,length,30.5,30.5,True,12,True,False,False
+12941225,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+12963957,Width,"3""",7.6,length,7.6,7.6,True,3,True,False,False
+13015057,Capacity,60gal,60gal,named,60gal,,False,60,True,True,False
+13015057,Height,60,152.4,length,152.4,152.4,True,60,True,False,False
+13015057,Width,38,96.5,length,96.5,96.5,True,38,True,False,False
+13033950,Pack Quantity,6/Carton,6,count,6,6,True,6,True,False,True
+13033950,Size/Weight,5 oz,142,weight_g,142,142,True,5,True,False,False
+13088451,Width,"72""",182.9,length,182.9,182.9,True,72,True,False,False
+13134501,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+13134501,Pack Quantity,25/Box,25,count,25,25,True,25,True,False,True
+13134501,Width,8 1/2,21.6,length,21.6,21.6,True,8,True,False,False
+13168096,Pack Quantity,30/Carton,30,count,30,30,True,30,True,False,True
+13168096,Size/Weight,0.95 oz,27,weight_g,27,27,True,0.95,True,False,False
+13259034,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+13349156,Cache,256,256 Megabytes,named,256,,False,256,False,False,False
+13349156,Capacity,6Gb,6 Gigabytes,named,6 Gigabytes,6 Gigabytes,True,6,True,False,False
+13439021,Capacity,144 lb.,144 lb.,named,144 lb.,,False,144,True,True,False
+13439021,Length,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+13491976,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+13504177,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+13638666,Depth,"26""",66.0,length,66.0,66.0,True,26,True,False,False
+13638666,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+13847381,Pack Quantity,18 Pods/Box,18,count,18,18,True,18,True,False,True
+13966890,Capacity,130 ml,130 ml,named,130 ml,,False,130,True,True,False
+14042593,Height,30,76.2,length,76.2,76.2,True,30,True,False,False
+14042593,Paper Weight,20-lb,9.1,weight_kg,9.1,9.1,True,20,True,False,False
+14042593,Width,25,63.5,length,63.5,63.5,True,25,True,False,False
+14107107,Width,4,10.2,length,10.2,10.2,True,4,True,False,False
+14342481,Pack Quantity,50/BX,50,count,50,50,True,50,True,False,True
+14388166,Capacity,350 lbs.,350 lbs.,named,350 lbs.,,False,350,True,True,False
+14388166,Depth,24,61.0,length,61.0,61.0,True,24,True,False,False
+14388166,Height,10,25.4,length,25.4,25.4,True,10,True,False,False
+14388166,Width,15,38.1,length,38.1,38.1,True,15,True,False,False
+14544516,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+14566931,Capacity,12oz,12oz,named,12oz,,False,12,True,True,False
+14577980,Capacity,750 lb.,750 lb.,named,750 lb.,,False,750,True,True,False
+14577980,Length,"46""",116.8,length,116.8,116.8,True,46,True,False,False
+14577980,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+14612432,Capacity,13 gal,13 gal,named,13 gal,,False,13,True,True,False
+14612432,Height,27 2/5,69.6,length,69.6,69.6,True,27,True,False,False
+14612432,Width,24,61.0,length,61.0,61.0,True,24,True,False,False
+14643240,Length,28,71.1,length,71.1,71.1,True,28,True,False,False
+14643240,Width,16,40.6,length,40.6,40.6,True,16,True,False,False
+14665044,Capacity,300 lb.,300 lb.,named,300 lb.,,False,300,True,True,False
+14665044,Length,"27""",68.6,length,68.6,68.6,True,27,True,False,False
+14665044,Width,"18""",45.7,length,45.7,45.7,True,18,True,False,False
+14674046,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+14848539,Capacity,200/400GB,200/400 Gigabytes,named,200/400 Gigabytes,200/400 Gigabytes,True,200,True,False,False
+14860733,Depth,"3""",7.6,length,7.6,7.6,True,3,True,False,False
+14860733,Paper Weight,20-lb.,9.1,weight_kg,9.1,9.1,True,20,True,False,False
+14906993,Pack Quantity,12/Carton,12,count,12,12,True,12,True,False,True
+14906993,Size/Weight,2.64oz,75,weight_g,75,75,True,2.64,True,False,False
+14970168,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15002042,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15030745,Height,11,27.9,length,27.9,27.9,True,11,True,False,False
+15030745,Pack Quantity,50 Sheets,50,count,50,50,True,50,True,False,True
+15030745,Width,8 1/2,21.6,length,21.6,21.6,True,8,True,False,False
+15035612,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+15061652,Height,"74""",188.0,length,188.0,188.0,True,74,True,False,False
+15072407,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+15099702,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+15134678,Height,14 1/2,36.8,length,36.8,36.8,True,14,True,False,False
+15134678,Pack Quantity,100/Carton,100,count,100,100,True,100,True,False,True
+15134678,Width,9 1/2,24.1,length,24.1,24.1,True,9,True,False,False
+15167767,Cache,512MB,512 Megabytes,named,512 Megabytes,512 Megabytes,True,512,True,False,False
+15189681,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15412783,Capacity,40-45 Gallon,40-45 Gallon,named,40-45 Gallon,,False,40,True,True,False
+15412783,Height,48,121.9,length,121.9,121.9,True,48,True,False,False
+15412783,Width,40,101.6,length,101.6,101.6,True,40,True,False,False
+15439026,Capacity,12.5 oz,12.5 oz,named,12.5 oz,,False,12.5,True,True,False
+15456559,Height,"5-1/4""",13.3,length,13.3,13.3,True,5,True,False,False
+15456559,Width,"4-3/8""",11.1,length,11.1,11.1,True,4,True,False,False
+15484057,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+15545107,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15556904,Pack Quantity,800/Box,800,count,800,800,True,800,True,False,True
+15556904,Size/Weight,0.035 oz,1,weight_g,1,1,True,0.035,True,False,False
+15624966,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15672370,Capacity,12 cu. ft.,12 cu. ft.,named,12 cu. ft.,,False,12,True,True,False
+15745332,Capacity,10-Sheet,10-Sheet,named,10-Sheet,,False,10,True,True,False
+15754554,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+15770564,Height,single height,single height,length,single height,,False,,True,True,False
+15798377,Cache,1MB,1 Megabytes,named,1 Megabytes,1 Megabytes,True,1,True,False,False
+15872593,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15883094,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+15918219,Depth,"19-1/4""",48.9,length,48.9,48.9,True,19,True,False,False
+15918219,Height,"28-3/8""",72.1,length,72.1,72.1,True,28,True,False,False
+15920244,Capacity,"12 lb. breaking strength (based on 1/8"" wide band)","12 lb. breaking strength (based on 1/8"" wide band)",named,"12 lb. breaking strength (based on 1/8"" wide band)",,False,12,True,True,False
+15920244,Length,"3-1/2""",8.9,length,8.9,8.9,True,3,True,False,False
+15920244,Width,"1/16""",0.2,length,0.2,0.2,True,1,True,False,False
+15952633,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+15952633,Length,"72""",182.9,length,182.9,182.9,True,72,True,False,False
+15952633,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+15961227,Rotational Speed,15K,15000,speed,15000,15000,True,15,True,False,False
+15975793,Depth,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+15975793,Width,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+15989953,Height,"1-3/4""",4.4,length,4.4,4.4,True,1,True,False,False
+16002787,Rotational Speed,10K,10000,speed,10000,10000,True,10,True,False,False
+16030491,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+16049675,Depth,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+16049675,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+16115761,Size/Weight,6in,6in,weight_g,6in,,False,6,True,True,False
+16147776,Depth,"27-3/4""",70.5,length,70.5,70.5,True,27,True,False,False
+16147776,Height,"15-1/2""",39.4,length,39.4,39.4,True,15,True,False,False
+16147776,Length,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+16203636,Size/Weight,10 oz,283,weight_g,283,283,True,10,True,False,False
+16362722,Depth,"18-9/16""",47.1,length,47.1,47.1,True,18,True,False,False
+16362722,Length,4 ft.,121.9,length,121.9,121.9,True,4,True,False,False
+16394700,Height,17,43.2,length,43.2,43.2,True,17,True,False,False
+16394700,Pack Quantity,500 Sheets/Ream,500,count,500,500,True,500,True,False,True
+16394700,Paper Weight,28lb,12.7,weight_kg,12.7,12.7,True,28,True,False,False
+16394700,Width,11,27.9,length,27.9,27.9,True,11,True,False,False
+16405798,Height,"36""",91.4,length,91.4,91.4,True,36,True,False,False
+16405798,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+16405798,Width,"30""",76.2,length,76.2,76.2,True,30,True,False,False
+16413004,Length,"400""",1016.0,length,1016.0,1016.0,True,400,True,False,False
+16413004,Pack Quantity,4/Pack,4,count,4,4,True,4,True,False,True
+16413004,Width,"1/6""",0.4,length,0.4,0.4,True,1,True,False,False
+16464769,Rotational Speed,7.2K,7200,speed,7200,7200,True,7.2,True,False,False
+16476771,Height,full height,full height,length,full height,,False,,True,True,False
+16492299,Height,8,20.3,length,20.3,20.3,True,8,True,False,False
+16492299,Pack Quantity,"50 Sheet, Dozen Pads",50,count,50,50,True,50,True,False,True
+16492299,Width,5,12.7,length,12.7,12.7,True,5,True,False,False
+16801495,Height,3 1/4,8.3,length,8.3,8.3,True,3,True,False,False
+16801495,Width,1 3/4,4.4,length,4.4,4.4,True,1,True,False,False
+16812932,Cache,512MB,512 Megabytes,named,512 Megabytes,512 Megabytes,True,512,True,False,False
+16812932,Capacity,80GB,80 Gigabytes,named,80 Gigabytes,80 Gigabytes,True,80,True,False,False
+16860317,Length,"119""",302.3,length,302.3,302.3,True,119,True,False,False
+16978172,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+16981138,Capacity,250-sheet,250-sheet,named,250-sheet,,False,250,True,True,False
+17003990,Length,"8-1/2""",21.6,length,21.6,21.6,True,8,True,False,False
+17020068,Height,"75""",190.5,length,190.5,190.5,True,75,True,False,False
+17020068,Length,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+17020068,Width,"24""",61.0,length,61.0,61.0,True,24,True,False,False
+17060917,Width,"48""",121.9,length,121.9,121.9,True,48,True,False,False
+17147120,Height,14 1/2,36.8,length,36.8,36.8,True,14,True,False,False
+17147120,Pack Quantity,25/Carton,25,count,25,25,True,25,True,False,True
+17147120,Width,9 1/2,24.1,length,24.1,24.1,True,9,True,False,False
+17288273,Capacity,Pair,Pair,named,Pair,,False,,True,True,False
+17327004,Height,"70""",177.8,length,177.8,177.8,True,70,True,False,False
+17327004,Length,"72""",182.9,length,182.9,182.9,True,72,True,False,False
+17327004,Width,"39""",99.1,length,99.1,99.1,True,39,True,False,False
+17347514,Capacity,up to 100 active employees or jobs,up to 100 active employees or jobs,named,up to 100 active employees or jobs,,False,100,True,True,False
+17347514,Depth,"8""",20.3,length,20.3,20.3,True,8,True,False,False
+17347514,Height,"5""",12.7,length,12.7,12.7,True,5,True,False,False
+17347514,Width,"6""",15.2,length,15.2,15.2,True,6,True,False,False
+17485325,Length,"9.77""",24.8,length,24.8,24.8,True,9.77,True,False,False
+17499405,Height,7/8,2.2,length,2.2,2.2,True,7,True,False,False
+17499405,Pack Quantity,700 stickers per pack,700,count,700,700,True,700,True,False,True
+17499405,Width,1-1/4,3.2,length,3.2,3.2,True,1,True,False,False

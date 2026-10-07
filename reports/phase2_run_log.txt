@@ -1,0 +1,49 @@
+== unit normalization vs WDC-PAVE (exact match)
+                     n  no_normalization  first_number_only  ours_parsed_only   ours
+Cache              31             0.000              0.000             0.935  0.935
+Capacity           68             0.765              0.015             0.235  0.985
+Depth              47             0.000              0.000             1.000  1.000
+Height            101             0.020              0.000             0.980  1.000
+Length             52             0.000              0.000             0.962  0.962
+Pack Quantity      64             0.047              0.938             0.969  0.969
+Paper Weight        7             0.000              0.000             1.000  1.000
+Rotational Speed   65             0.000              0.000             1.000  1.000
+Size/Weight        22             0.136              0.000             0.864  1.000
+Width             140             0.000              0.000             1.000  1.000
+ALL               597             0.101              0.102             0.894  0.988
+== mined abbreviation candidates (top 25)
+ short  short_count expansion  expansion_count
+print          455   printed             1347
+  all          216    allure              473
+choco          191 chocolate              687
+stick          139   sticker              385
+  pen           98    pencil              359
+  deo           90 deodorant              460
+  eye           80    eyelet              165
+  dia           62   diamond              719
+   la           60  lavender              180
+  fab           59    fabric              222
+ cook           59   cookies              238
+clean           57   cleaner              298
+   or           51   organic             1162
+   na           44   natural              682
+   me           42    medium              362
+ hold           41    holder              158
+   ne           39  necklace             1542
+ herb           39    herbal              224
+   pu           38    purple              128
+ desi           37    design              439
+  tab           37   tablets              108
+  max           37    maxima               74
+  pre           36   premium              558
+   sl           36    sleeve              542
+ dust           36   dustbin               87
+== spelling correction: unseen words only (system)
+ {'typo_words': 487, 'restored': 444, 'restored_rate': 0.912, 'wrong_correction_rate': 0.023, 'rare_tokens': 7426, 'rare_tokens_changed': 0, 'rare_changed_rate': 0.0, 'setting': 'unseen words only (system)'}
+== spelling correction: also rare seen words
+ {'typo_words': 487, 'restored': 447, 'restored_rate': 0.918, 'wrong_correction_rate': 0.023, 'rare_tokens': 7426, 'rare_tokens_changed': 1320, 'rare_changed_rate': 0.178, 'setting': 'also rare seen words'}
+bigbasket: 27555 rows, quantity found 3.9%, pack count found 1.1%, 16.8 s
+flipkart: 20000 rows, quantity found 5.3%, pack count found 0.9%, 15.2 s
+off_india: 21189 rows, quantity found 7.3%, pack count found 0.2%, 7.8 s
+abt: 1081 rows, quantity found 3.0%, pack count found 0.7%, 1.4 s
+buy: 1092 rows, quantity found 3.6%, pack count found 2.3%, 1.4 s
