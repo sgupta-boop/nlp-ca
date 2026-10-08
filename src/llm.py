@@ -51,7 +51,8 @@ def _chat(model: str, messages: list, schema: type[BaseModel]):
     - GPU out of memory (PyTorch models such as SBERT or GLiNER hold VRAM): put fewer layers on the GPU
     - CPU out of memory (other programs hold RAM): use a smaller context window"""
     import ollama  # imported here so modules that never call the LLM do not need Ollama running
-    options = {"temperature": 0, "seed": SEED, "num_ctx": NUM_CTX}
+    # num_predict caps the reply length: without it a looping model writes until the context is full (~8 min)
+    options = {"temperature": 0, "seed": SEED, "num_ctx": NUM_CTX, "num_predict": 300}
     for _ in range(3):
         try:
             return ollama.chat(model=model, messages=messages, format=schema.model_json_schema(),

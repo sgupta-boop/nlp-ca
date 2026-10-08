@@ -1,0 +1,7 @@
+     label set  products                      method  accuracy  macro_f1  invalid  llm_calls
+BigBasket (11)       550    embedding cosine, MiniLM     0.456     0.423        0          0
+BigBasket (11)       550 embedding cosine, BGE-small     0.471     0.449        0          0
+BigBasket (11)        55    embedding cosine, MiniLM     0.418     0.405        0          0
+BigBasket (11)        55 embedding cosine, BGE-small     0.382     0.336        0          0
+BigBasket (11)        55    LLM zero-shot (qwen3:8b)     0.418     0.365        0          6
+LLM calls=6  cache hits=0  failures=0  time=260.4s  output tokens=498  (1.9 tok/s) wall 279s

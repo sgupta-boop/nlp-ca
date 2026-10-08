@@ -189,6 +189,9 @@ def hinglish_eval(model, name: str, roman_to_native: dict, variants: dict, prefi
     queries = {
         "English (casual)": test["english_noisy"].tolist(),
         "Hinglish": test["hinglish"].tolist(),
+        # second Hinglish set from the hand-written dictionary (same dictionary as the training augmentation,
+        # different names), because the LLM rewrote only a few words into Hindi
+        "Hinglish (dictionary)": [to_hinglish(o) or o.lower() for o in test["original"]],
         "Hinglish, spelling variants": [spelling_variant(normalize_text(h), variants, rng) for h in test["hinglish"]],
         "Hinglish, back-transliterated": [back_transliterate(normalize_text(h), roman_to_native) for h in test["hinglish"]],
     }
@@ -215,7 +218,7 @@ def evaluate() -> None:
         model = SentenceTransformer(path)
         prefix = ("query: ", "passage: ") if "E5" in name else ("", "")
         hing_rows += hinglish_eval(model, name, roman_to_native, variants, prefix)
-        print(hing_rows[-4:], flush=True)
+        print(hing_rows[-5:], flush=True)
         if "MiniLM" in name:
             SBERT_MODELS["custom"] = path
             ab = evaluate_retrieval("abt_buy", "custom")

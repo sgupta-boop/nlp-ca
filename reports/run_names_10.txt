@@ -1,0 +1,13 @@
+ size                                                                                 medoid_name                                                                            llm_name
+    2                                                                Soyfit Tofu Supreme - Chilli                                                          Soyfit Tofu Supreme Chilli
+    2                                                                  Fresho Ridge Gourd - Diced                                                            Fresho Ridge Gourd Diced
+    2                                                    Nike Cool Wind Eau De Toilette Deodorant                                            Nike Cool Wind Eau De Toilette Deodorant
+    2 Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g Open Secret Choco Almond Nutty Cookies Box of 2 25g Choco Almond Butter Spread 175g
+    2                                                                   bb Royal Organic - Quinoa                                                             Bb Royal Organic Quinoa
+    2                                               Cello Dazzle Secret Garden Dinner Set - White                                         Cello Dazzle Secret Garden Dinner Set White
+    2                                                                 Aroma Magic  Wheat Germ Oil                                                          Aroma Magic Wheat Germ Oil
+    2       bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg        BB Combo Popular Channa Dal 1 Kg Urad Dal Split 1 Kg BB Royal Rice Dosa 2 Kg
+    2                                                              Asian Smart Stackable Cont Set                                                      Asian Smart Stackable Cont Set
+    2                                                          MAGGI  Cuppa Noodles - Chilli Chow                                                     Maggi Cuppa Noodles Chilli Chow
+brand kept: llm 1.0 medoid 1.0
+LLM calls=2  cache hits=8  failures=0  time=101.3s  output tokens=27  (0.3 tok/s) wall 113s

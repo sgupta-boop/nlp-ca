@@ -4797,5 +4797,866 @@
    "pack_count": null,
    "colour": null
   }
+ },
+ "959ec54cc9f7b7accaea821f3c64bdea22169a609fef21c40626ac748c481588": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony 400 Disc MegaStorage CD Changer - CDPCX455\nListing B: Sony CDP-CX355 300 Disc MegaStorage CD Changer\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (CDPCX455 vs CDP-CX355) and different disc capacities (400 vs 300) indicate different products."
+  }
+ },
+ "1b55ee0df0f42ae6eeeede93b032458362df295f2d34fa3fbcbfc5fce37a416a": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Cuisinart Convection-Oven-Toaster-Broiler With Exact Heat Sensor - TOB165WH\nListing B: White .5 cu. ft 1500 Watt Convection/Broiler/Toaster Oven\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Listing A specifies a model number (TOB165WH) and includes features like Exact Heat Sensor, while Listing B describes a generic product with different specifications and no model number."
+  }
+ },
+ "3b6b06d0b0d9f158d64906fae8c61f23cf02679fbd2b9f090d775a3cc306cdca": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Escort Passport Radar And Laser Detector - Black Finish - 8500\nListing B: Escort 9500CI Escort GPS Radar Detector\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (8500 vs 9500CI) indicate different products."
+  }
+ },
+ "499a6762c4f18830a70c9b6ff2f3978835fc7cbc31c6663b67dfb76931db37cc": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Olympus Olympus Ni-MH Quick Charger And Battery Set - B90SU\nListing B: Olympus B-90SU AA/AAA Size Battery Charger - 200899\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Olympus B-90SU battery charger, with Listing A specifying the product name and model, and Listing B providing the model number and product description."
+  }
+ },
+ "d65706e312e349f2ae84966bc859869ae9be21068eadac2fc5ac14568a8e6728": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sanus 15' - 40' Flat Panel TV Black Wall Mount - VM400B\nListing B: Sanus Flat Panel TV Wall Mount - VM1B\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (VM400B vs VM1B) indicate different products."
+  }
+ },
+ "c59bae4295fa1a287590b6a6963d85ab20aa721c673b9841c76cfaa7b1680bd0": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Danby Designer Portable Dishwasher - DDW1805WH\nListing B: DDW1805W 18-in. Portable Dishwasher (White, Energy Star)\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same model (DDW1805) with the same color (White) and similar description, indicating the same product."
+  }
+ },
+ "524ca8d9cd884507621825ab39055b5e0c8c1a26446b24bbed83fd5c6c76a1ab": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Cuisinart Countertop Griddler - GR4\nListing B: Cuisinart GR-4 Griddler Four Multifunctional Cooking Options\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Cuisinart Griddler model GR4, with Listing B providing additional details about its multifunctional cooking options."
+  }
+ },
+ "fbd5c73438268112eb63de69db9af7eabc046bbe8d3de4fa2da14fe172c00c86": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Soft Cyber-Shot Carrying Case - LCSCST\nListing B: Sony LCS-CSH Soft Camera Case - LCSCSH\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers LCSCST and LCSCSH are different, indicating different products."
+  }
+ },
+ "ed301966a895ebda6612866871464f4ff7ef2196fc156aee35dee0878995cb64": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Soft Cyber-Shot Carrying Case - LCSCST\nListing B: Sony LCS-TWA/R Cyber-shot Camera Case\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (LCSCST vs LCS-TWA/R) indicate different products."
+  }
+ },
+ "b17817483118c04481d1904282b8b0ea23327c2f72d907224839984175a3d1c6": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Soft Cyber-Shot Carrying Case - LCSCST\nListing B: Sony LCS-TWA/B Cyber-shot Camera Case - LCSTWA/B\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers and variant identifiers (LCSCST vs LCSTWA/B) are different, indicating different products."
+  }
+ },
+ "5bda88353a04eae51bf6d4cca636dc7074ced10e247e8309179b0d00e3513c42": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Soft Cyber-Shot Carrying Case - LCSCST\nListing B: Sony LCS-CSJ Soft Camera Case - LCSCSJ\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers LCSCST and LCSCSJ are different, indicating different products."
+  }
+ },
+ "e8187d7f9f76445b37a0c036f2aa78348e75571f022ff3f3c123795d70ccf7e9": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Garmin Streetpilot C Series Vehicle Suction Mount - Black Finish - 0101060900\nListing B: Garmin Suction Cup Mount - 010-10823-00\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers and product descriptions indicate different products."
+  }
+ },
+ "bd0224d80ec6993f5e4cec5f2399d83c2675a300851c523af43a0cc03e467108": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Garmin Streetpilot C Series Vehicle Suction Mount - Black Finish - 0101060900\nListing B: Garmin Suction Cup Mount - 010-10936-00\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers and product descriptions indicate different products."
+  }
+ },
+ "7851027877143336c2a182e20d36fe709f997e822ee4bddc9b9582b4469e411b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Garmin Streetpilot C Series Vehicle Suction Mount - Black Finish - 0101060900\nListing B: Garmin Suction Cup Mount - 010-10815-00\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers and product descriptions indicate different products."
+  }
+ },
+ "0461baf2d36f4394394cf9ab9e1c85bb7561d87887a6c46d5c8fa016fa90afba": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Netgear ProSafe 16 Port 10/100 Desktop Switch - Purple Finish - FS116P\nListing B: Netgear ProSafe FS116P Ethernet Switch - FS116PNA\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (FS116P vs FS116PNA) indicate different products."
+  }
+ },
+ "5f4cd964689bd9d4138295ab5f5028edf8c8e61ad839fc687441873126b276ca": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Nikon 18-200mm Nikkor Zoom Lens - Black Finish - 2159\nListing B: Nikon 18-200mm 3.5-5.6 G ED DX AFS VR Zoom Wide Angle Nikkor Lens - Niko_215930348\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers and additional specifications in Listing B indicate a different product."
+  }
+ },
+ "07b931a1aeb2b7e948af08910f35bd88ee1fce9bed44b94250a72f3d59540c99": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Q 300 Liquid Propane Outdoor Grill - 426001\nListing B: Weber Q 300 Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same product, the Weber Q 300 Gas Grill, with Listing A specifying the model number 426001."
+  }
+ },
+ "dbe33358f73b2ab6a012a053dcc228e1720f92dff481696dc49ebe0a4a2f862d": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Q 300 Liquid Propane Outdoor Grill - 426001\nListing B: Weber Q 320 Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (426001 vs Q 320) indicate different products."
+  }
+ },
+ "9ebc2b05b73dec961b1c30321bb6ee300efbad568fbb6436e7306d7e4ccee28d": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Lightweight Tripod - Black Finish - VCTR100\nListing B: SONY COMPACT TRIPOD 14'/39' *NIC* - VCTR100\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same product (Sony VCTR100 tripod) with matching model numbers, despite different descriptions of size and finish."
+  }
+ },
+ "b93a0e14b3f8b253651765c0192733f7fb9f0f28805acbebc5af17db297b6606": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Lithium Ion Rechargeable Battery - Black Finish - CGRS006A1B\nListing B: Panasonic Lithium Ion Digital Camera Battery - CGR-S006A/1B\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same Panasonic Lithium Ion battery with the same model number CGRS006A1B (variant spelling differences do not affect product identity)."
+  }
+ },
+ "7ce0bee0a77c9247829a59931d90f37be70807503a9a7fad08c98ad6ccc7f80e": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Waring Professional Cool-Touch Deep Fryer - Black/Stainless Steel Finish - DF100\nListing B: Waring Pro Deep Fryer 3qt -Black\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (DF100 vs. 3qt) and different finishes (Black/Stainless Steel vs. Black) indicate different products."
+  }
+ },
+ "f204fb4d5236d97238a9fbbf234686d0a5825b675f5a0ed2e4ff8fd2856f0d3e": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Terk XM Outdoor Home Antenna - Grey Finish - XM6\nListing B: Audiovox XM6 Outdoor Home Antenna - XM-6\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different brands (Terk vs. Audiovox) and different finish descriptions (Grey Finish vs. no specific finish mentioned), indicating different products."
+  }
+ },
+ "85dd4f7c2b8d96c70cbca677460dcfd088ebcc098fd34f1bc6a6ccc06a8e40dd": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sanus 15' To 40' Flat Panel Black TV Wall Mount - ML22B1\nListing B: Sanus Flat Panel TV Wall Mount - VMF\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (ML22B1 vs VMF) indicate different products."
+  }
+ },
+ "50af39d909bca288bab16f509b5aede96af99abbd1c5edfa7133d9e2c58b5f60": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sanus 15' - 40' VisionMount Flat Panel TV Black Wall Mount - MT25B1\nListing B: Sanus Flat Panel TV Wall Mount - VMF\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (MT25B1 vs VMF) indicate different products."
+  }
+ },
+ "ed3953fb434b829f3ebd934e924edf7d52eb71448af355452fa9d71d00888a2b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sanus 15' - 40' VisionMount Flat Panel TV Black Wall Mount - MT25B1\nListing B: Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (MT25B1 vs MF110-B1) indicate different products."
+  }
+ },
+ "82bf352d7c27cb3aec7ed6606059ac4abfc24f8b8dbad5071e95b3153087196b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sanus 15' - 40' VisionMount Flat Panel TV Black Wall Mount - MT25B1\nListing B: Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (MT25B1 vs ML22-B1) indicate different products."
+  }
+ },
+ "3708b80b9ff93b9b2404c7ca67890f53a0f9274b6d35c5974ce4fdc45702d515": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Garmin Nuvi 360 010-10815-00 Black Replacement Vehicle Suction Cup Mount - 0101081500\nListing B: Garmin Suction cup mount/12-volt adapter kit - 010-10979-00\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers and product descriptions indicate different products."
+  }
+ },
+ "86a43e04165331ce0e1c81c03f95e9ed6e15c772c533fb757cd1b6a2ff11dc27": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Garmin Nuvi 360 010-10815-00 Black Replacement Vehicle Suction Cup Mount - 0101081500\nListing B: Garmin Adjustable Vehicle Suction Cup - 010-10823-03\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (010-10815-00 vs 010-10823-03) indicate different products."
+  }
+ },
+ "b0e716c1385f503b984f29004db4ab17ed610c88f67cf9d04e15cef0e8e65962": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Lowepro Digital Camera Case In Black - EDIT100BK\nListing B: Lowepro Edit 100 Case for Camcorder - Nylon, MicroFiber - Black (Black)\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Lowepro Edit 100 case in black, with matching brand, model, and color."
+  }
+ },
+ "6fced7035ea6f1cea28f46d24d9ebc051aac69c1b8317e58d2d5630d17aaf6af": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Universal MRF-350 RF Black Base Station - MRF350\nListing B: Universal Remote Control MRF-350 Addressable Narrow Band RF Base Station with RFX-250 Antenna\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Listing A refers to a Black Base Station for the MRF-350 model, while Listing B describes a Remote Control Base Station with an antenna, indicating different product variants."
+  }
+ },
+ "210e537367335d436dcfd2f9354b842e06f0dcd82fda2960cd30fd31f730c023": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Digital Photo Printer Paper 120 Pack - SVMF120P\nListing B: Sony Ribbon and Paper with Snap-Off Edges For DPP-FP50 Digital Photo Printer - SVMF120P\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Listing A refers to paper only, while Listing B includes both ribbon and paper, making them different products."
+  }
+ },
+ "0acfd64ca37d46213d82e7fb6e83241ba942b8a758a4bee2c6a7690c2f818289": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Lowepro SlingShot 200 AW Digital Camera Back Pack - SLINGSHOT200AW\nListing B: Lowepro SlingShot 200 AW Camera Backpack - Backpack - MicroFiber, Ripstop Nylon - Black, Gray (Black)\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Lowepro SlingShot 200 AW Digital Camera Backpack with the same model number and core product description, despite minor differences in packaging details."
+  }
+ },
+ "9f3537af9de105d6d15c57af8a897c61ede2c46c3aa033ccfcee394da6c4230c": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Stainless Steel Genesis S-310 Liquid Propane Grill - 3770001\nListing B: Weber Genesis Series 3770001 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same model (3770001) and brand (Weber) with the same core product description (Genesis Series gas grill)."
+  }
+ },
+ "949523c444049871b32bc7936520ae0de0db472079dab30662228c8ecb2dfe9f": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Stainless Steel Genesis S-310 Liquid Propane Grill - 3770001\nListing B: Weber Genesis Series S-310 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Weber Genesis Series S-310 gas grill, with Listing A specifying the model number 3770001 which corresponds to the same product as Listing B."
+  }
+ },
+ "518ea11857080344c96138d144f2fde55a75670519b714f5541dd87b17684c38": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Stainless Steel Genesis S320 LP Grill - 3780001\nListing B: Genesis Series 3741001 60' Freestanding Gas Grill with 637 sq. in. Cooking Surface & 3 Stainless Steel Burners: Black LP Gas\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3780001 vs 3741001) and different features (637 sq. in. cooking surface and 3 burners vs not specified)."
+  }
+ },
+ "a031c23935d1fabd00f25d2160bf0b69c09f484007018053a2f799491e669a49": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Stainless Steel Genesis S320 LP Grill - 3780001\nListing B: Weber Genesis Series 3770001 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3780001 vs 3770001) indicate different products."
+  }
+ },
+ "9ff646d09e641816f228caff78dd661a79100d8238205e3401adfdbeefb44237": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Stainless Steel Genesis S320 LP Grill - 3780001\nListing B: Weber Genesis S-320 3880001 60' Freestanding Gas Grill with 637 sq. in. Cooking Surface, 3 Stainless Steel Burners, Flush-Mounted Side Burner & Stainless Steel Shroud: Natural Gas\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3780001 vs 3880001) and different burner configurations (3 vs 3.5 burners) indicate different products."
+  }
+ },
+ "18933436d52052146389f372811d0c9c1f15895a2fca765c9353f638ce178e5b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Kenwood KCA-IP300V iPod Video Direct Cable - KCAIP300V\nListing B: Kenwood iPod Direct Cable - kcaip200\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (KCAIP300V vs kcaip200) indicate different products."
+  }
+ },
+ "19b6edff4b25504d5dd19c78bdf9121ebb5bda04f72b71e91a720c072a9d8a63": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: LG DLG0452W White XL Capacity Gas Dryer - DLG0452WH\nListing B: LG XL Capacity Electric Dryer\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different types (gas vs electric) and model numbers (DLG0452WH vs unspecified)."
+  }
+ },
+ "d6b6c5dec76ee8dc87c2c5be5c06b0df5261a16357875d096f7626123655601b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony LCS-CSQ/B Black Soft Carrying Case - LCSCSQB\nListing B: Sony LCS-CSH Soft Camera Case - LCSCSH\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (LCS-CSQ/B vs LCS-CSH) indicate different products."
+  }
+ },
+ "d1a08ce74461cc412be37a3029425dcf5da48dfb5b0c31b1ac260832e05f105b": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony LCS-CSQ/B Black Soft Carrying Case - LCSCSQB\nListing B: Sony LCS-CSJ Soft Camera Case - LCSCSJ\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (LCS-CSQ/B vs LCS-CSJ) indicate different products."
+  }
+ },
+ "f350f2e503f9d078601db53cb4349d1671874ace4a6117d30141286c1191fd73": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis E-310 Liquid Propane Black Outdoor Grill - 3741001\nListing B: Weber Genesis Series E-310 3841001 60' Freestanding Gas Grill with 637 sq. in. Cooking Surface & 3 Stainless Steel Burners: Black Natural Gas\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3741001 vs 3841001) and different fuel types (Liquid Propane vs Natural Gas) indicate different products."
+  }
+ },
+ "c35755f4b3986ab761f8f658bdffe8c7a85bc30130b8729669ec31b2c285958e": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis S-310 Natural Gas Stainless Steel Outdoor Grill - 3870001\nListing B: Genesis Series 3741001 60' Freestanding Gas Grill with 637 sq. in. Cooking Surface & 3 Stainless Steel Burners: Black LP Gas\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3870001 vs 3741001), different burner counts (3 vs 6), different cooking surface sizes (387 sq. in. vs 637 sq. in.), and different gas types (Natural Gas vs LP Gas) indicate不同"
+  }
+ },
+ "d494cd68e059794d41384c467b9b6668f5de46ff8a65fb6185a712615f84da93": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis S-310 Natural Gas Stainless Steel Outdoor Grill - 3870001\nListing B: Weber Genesis Series 3770001 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3870001 vs 3770001) and different descriptions (Stainless Steel Outdoor Grill vs Freestanding Gas Grill) indicate different products."
+  }
+ },
+ "45093533f7967fe5d02ec40b2997a35c79e096dd0da6e90f96674806650ff036": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis S-310 Natural Gas Stainless Steel Outdoor Grill - 3870001\nListing B: Weber Genesis Series S-310 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Weber Genesis S-310 model, with the same model number and key features, despite slight differences in phrasing."
+  }
+ },
+ "e022f53b066f8ec2bf88085f76507af8b57a4777ccb2cfedf86585a4ec4de0fd": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis E-310 Natural Gas Black Outdoor Grill - 3841001\nListing B: Genesis Series 3741001 60' Freestanding Gas Grill with 637 sq. in. Cooking Surface & 3 Stainless Steel Burners: Black LP Gas\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3841001 vs 3741001) and different features (Natural Gas vs LP Gas, 3 burners vs 637 sq. in. cooking surface)."
+  }
+ },
+ "5fdfebcdaaffc7eec111d135ef20f529c97c8aa1b9aaa6b9d75d4ee624facfb9": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber Genesis E-310 Natural Gas Black Outdoor Grill - 3841001\nListing B: Weber Genesis Series 3770001 60' Freestanding Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (3841001 vs 3770001) indicate different products."
+  }
+ },
+ "19c62a412f5216d3ab920bbf8f6007707bc3eedaedf19d3d0212dd01fa0dafd9": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Weber 3758301 Blue Genesis EP-320 LP Gas Grill - 3758301\nListing B: Weber Q 320 Gas Grill\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Weber Q 320 Gas Grill, with Listing A providing the model number 3758301 and Listing B referencing it as the Q 320 model."
+  }
+ },
+ "a333ade1fd65ecb845265a2018afe2b148ec551d1d8a69875b405918ed7cd67f": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony LCS-TWA/B Black Soft Leather Carrying Case - LCSTWAB\nListing B: Sony LCS-TWA/B Cyber-shot Camera Case - LCSTWA/B\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same product, the Sony LCS-TWA/B camera case, with identical model numbers and descriptions, despite slight differences in phrasing."
+  }
+ },
+ "5560bda71d01d48ac34d349ab6822c4f1a52003dd502fcb5ff566fed4c2f5db8": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Escort Passport 9500I Radar And Laser Detector - 9500I\nListing B: Escort new radar gps powered - 9500I\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Escort Passport 9500I Radar and Laser Detector with the model number 9500I."
+  }
+ },
+ "7cf1d8254b89d2fdcdb06a39fcc3dec0015550225fa592103c56e250c414c733": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Stainless Steel Countertop Microwave Oven - NNSD377SS\nListing B: Panasonic NNSD667S 1.2 cu. ft. Countertop Microwave Oven In Stainless Steel\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers (NNSD377SS vs. NNSD667S) are different, indicating they are different products."
+  }
+ },
+ "d623a20edcdd0b203d5c426e2bcea115c1e58b2c4d0016dd633202eb350a1b55": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Stainless Steel Countertop Microwave Oven - NNSD377SS\nListing B: Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers (NNSD377SS vs. NNSD767S) are different, indicating different products."
+  }
+ },
+ "c7f01eb4e0c45380339fbf7e6adaaa09d8fedc0fcccd60bfe99764b3dfcf517e": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Stainless Steel Countertop Microwave Oven - NNSD377SS\nListing B: Panasonic 2.2 cu. ft. Stainless Steel Luxury Full Size Countertop Microwave Oven - NNSD967SS\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (NNSD377SS vs. NNSD967SS) indicate different products."
+  }
+ },
+ "31a4a2e4a3341cb074f32109f5f9eeaeeba1257e77e02325334b199bd0c9ba80": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Countertop Microwave Oven In Black - NNSN667BK\nListing B: Panasonic NNSN667W 1.2 cu. ft. Countertop Microwave Oven In White\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different color (Black vs. White) and model numbers (NNSN667BK vs. NNSN667W) indicate different products."
+  }
+ },
+ "cb31d4ff528be91512f7132304ed66737e52b115febeecf4b426b0f9799fc24a": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic Countertop Microwave Oven In Stainless Steel - NNSD667SS\nListing B: Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers NNSD667SS and NNSD767S are different, indicating different products."
+  }
+ },
+ "8fc85759df3726ef62dedd348aebbcf65f5979e44e052e22700a6a23de1c725f": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic NNSD797S Stainless Steel Countertop Microwave Oven - NNSD797SS\nListing B: Panasonic NNSD667S 1.2 cu. ft. Countertop Microwave Oven In Stainless Steel\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers (NNSD797S vs. NNSD667S) are different, indicating they are not the same product."
+  }
+ },
+ "2d0c3f1dcf554ab0bcd792ab83c85ca7a248fb7af5d6211522c1b86fb9ad11df": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic NNSD797S Stainless Steel Countertop Microwave Oven - NNSD797SS\nListing B: Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "The model numbers (NNSD797S vs. NNSD767S) are different, indicating they are not the same product."
+  }
+ },
+ "c417702c45bebb1759162f494abad611370e275407b0bddf790c70dcc717658a": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic NNSD797S Stainless Steel Countertop Microwave Oven - NNSD797SS\nListing B: Panasonic 2.2 cu. ft. Stainless Steel Luxury Full Size Countertop Microwave Oven - NNSD967SS\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Different model numbers (NNSD797SS vs. NNSD967SS) indicate different products."
+  }
+ },
+ "d4382a51d9e62533966367252076cae4a6e9d49193130b28e5b7a4329ff4c693": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Apple Mac Mini 1.83GHz Intel Core 2 Duo Computer - MB138LLA\nListing B: Apple Mac mini Desktop - MB138LL/A\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same Apple Mac mini desktop computer with the same model number MB138LLA (Listing A) and MB138LL/A (Listing B), which are variations of the same model."
+  }
+ },
+ "eb7a508984c089bca6a760cd396c0a2cc18661d954467bb4b76dc03b80cb1712": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony PSP 2000 Playstation Portable Gaming System Core 98510 In Piano Black - 711719851004\nListing B: Sony PSP Core System (Piano Black) (Slim Model with AV Video Out Port) - 98510\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the Sony PSP 2000 Core System in Piano Black with the model number 98510, confirming they are the same product."
+  }
+ },
+ "480f6807a3830bfaa53550bc17b00a54fc9dfc7f360ff048106e1976c3871ed8": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Panasonic 2 Line Integrated Corded Phone System - KXTSC14B\nListing B: Panasonic KX-TSC14B Corded Telephone\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same Panasonic corded telephone model KX-TSC14B, with identical brand, model, and product type."
+  }
+ },
+ "19427385a0e129589ccf60aae5332e79847dd18d49aca09560ed429c0e275723": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony HD-Handycam 1.5 Meters (5 Feet) HDMI Mini Cable - VMC15MHD\nListing B: Sony High Definition HDMI to Mini-HDMI Cable - VMC15MHD\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same Sony HDMI to Mini-HDMI cable with model number VMC15MHD, despite slight differences in description."
+  }
+ },
+ "e6d5df40c3583aeb7d40db5a5472222208a9259a94de11a9abf0d9036d45bc72": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Sony Lithium-Ion Rechargeable Battery Pack - NPFD1\nListing B: Sony InfoLITHIUM D-Type NP-FD1 Digital Camera Battery - NPFD1\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same Sony NPFD1 battery model, with Listing B providing additional details about the product type."
+  }
+ },
+ "9672b09b6bf63797c1357179242f28b2ffab6d886829024ea7b84d7805ed8f76": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Canon Easy Photo Pack - 1335B001\nListing B: Canon E-P100 Photo Pack For Selphy ES1 Printer - 1335B001\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": false,
+   "reason": "Listing A is a general Canon Easy Photo Pack, while Listing B specifies it is for the Selphy ES1 printer, indicating a different variant."
+  }
+ },
+ "02fe44aa9421f6cf9d735d2167a2146009226d8e976c5aaa01e9c1039ee74c60": {
+  "model": "qwen3:8b",
+  "prompt": "Listing A: Pioneer Single Din CD Receiver - DEHP3000IB\nListing B: Pioneer DEH-P3000IB Car Audio Player\nAre A and B the same product? Give a short reason.",
+  "response": {
+   "same": true,
+   "reason": "Both listings refer to the same product, the Pioneer DEH-P3000IB Car Audio Player, with the model number DEHP3000IB."
+  }
+ },
+ "4b9437a3425ea13dda04bc050bc547abbfdce540352ab84ff46e66c04c3fb724": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Soyfit Tofu Supreme - Chilli\n- Soyfit Tofu Supreme - Chilli\nStandard name:",
+  "response": {
+   "name": "Soyfit Tofu Supreme Chilli"
+  }
+ },
+ "f07c7086639c5a47cf11abe2562ebcfe93eb09a0820cf02e2c50f4df55ca8631": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Fresho Ridge Gourd - Diced\n- Fresho Ridge Gourd - Diced\nStandard name:",
+  "response": {
+   "name": "Fresho Ridge Gourd Diced"
+  }
+ },
+ "32b1bc5da6e47982db0e6467e53e450c0651ae1898090cc3b9d6f497c9c3903e": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Nike Cool Wind Eau De Toilette Deodorant\n- Nike Cool Wind Eau De Toilette Deodorant\nStandard name:",
+  "response": {
+   "name": "Nike Cool Wind Eau De Toilette Deodorant"
+  }
+ },
+ "b354efe09655bacf4223b5695a53f471b7a659a45b04f56b80f932bf5be8375c": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g\n- Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g\nStandard name:",
+  "response": {
+   "name": "Open Secret Choco Almond Nutty Cookies Box of 2 25g Choco Almond Butter Spread 175g"
+  }
+ },
+ "518badf49e48b189ac8a9edaf2acff02ae40c88c0559d6459960186c9b2d1ea3": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- bb Royal Organic - Quinoa\n- bb Royal Organic - Quinoa\nStandard name:",
+  "response": {
+   "name": "Bb Royal Organic Quinoa"
+  }
+ },
+ "cd5c9425777874b1ee9608721734738ccbfe5c4de0770b9937436e1256929903": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Cello Dazzle Secret Garden Dinner Set - White\n- Cello Dazzle Secret Garden Dinner Set - White\nStandard name:",
+  "response": {
+   "name": "Cello Dazzle Secret Garden Dinner Set White"
+  }
+ },
+ "d14f00f3f73100cc8b45c9ec4bf0ae26bac79d429199d930653054bb65ee166a": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Aroma Magic  Wheat Germ Oil\n- Aroma Magic  Wheat Germ Oil\nStandard name:",
+  "response": {
+   "name": "Aroma Magic Wheat Germ Oil"
+  }
+ },
+ "1e90f564e5a1a49836ef7268f6eff57775e74f94a6cd92f70ef918290cc60a6a": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg\n- bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg\nStandard name:",
+  "response": {
+   "name": "BB Combo Popular Channa Dal 1 Kg Urad Dal Split 1 Kg BB Royal Rice Dosa 2 Kg"
+  }
+ },
+ "a65457ff85e5336871ebe1c2168294275b4c50dedd4fc68c6d1a412c51ab6149": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- Asian Smart Stackable Cont Set\n- Asian Smart Stackable Cont Set\nStandard name:",
+  "response": {
+   "name": "Asian Smart Stackable Cont Set"
+  }
+ },
+ "352c4bf6275e358513a5480f04dbe4ae92ba1e5d4ad8f902405388f3770d1d0c": {
+  "model": "qwen3:8b",
+  "prompt": "Listings of one product:\n- MAGGI  Cuppa Noodles - Chilli Chow\n- MAGGI  Cuppa Noodles - Chilli Chow\nStandard name:",
+  "response": {
+   "name": "Maggi Cuppa Noodles Chilli Chow"
+  }
+ },
+ "9a8e5854f10f2a7651511cab57de2959bab4a5524a7fc919c64c9227d06bb88d": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Bella Baby Happy Wet Wipes - Silk & Cotton\n2. Mamypoko Pants Extra Absorb Diaper For New Born - Up to 5 Kg, NB-1\n3. Mamaearth Plant Based Laundry Detergent 1 L + Plant Based Laundry Detergent 200 ml\n4. Dabur Baby Cream - For Soft Skin With No Harmful Chemicals\n5. Santoor Santoor Baby Soap, 75g\n6. So Good Soy Milk - Unsweetened\n7. Milky Mist Cheese - Cheddar\n8. So Good Soy Milk Protein+ Original\n9. Epigamia  Coconut Milk Yogurt - With Coconut Jaggery, Dairy Free\n10. BHealthy Cake - Blueberry, Whole Wheat, Eggless\n\nReturn the list of 10 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Beauty & Hygiene",
+    "Baby Care",
+    "Cleaning & Household",
+    "Beauty & Hygiene",
+    "Beauty & Hygiene",
+    "Beverages",
+    "Bakery, Cakes & Dairy",
+    "Beverages",
+    "Beverages",
+    "Bakery, Cakes & Dairy"
+   ]
+  }
+ },
+ "c28bc64f2e9fa2c6951c2b3a858f1f66a053fc339e362d0e3329955b44d60710": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Kapiva Ayurveda Sandalwood Oil\n2. Gold Deer Neem Oil\n3. David Beckham Homme Eau De Toilette\n4. Park avenue Fragrance Body Spray - Super Saver Pack, Good Morning, Cool Blue & Storm\n5. Joy Honey & Almonds - Ultimate Nourishing Body Milk Lotion\n6. Shunya Fizz - Lime Lemon Classic Cola 300 ml + Fizz - Lime Lemon 300 ml\n7. Appy Fizz Light - Apple Juice Based Drink\n8. Karma Kettle Dawn Organic English Breakfast Black Tea\n9. Nescafe  Classic Instant Coffee\n10. Alkalen Water-based Electrolyte Drink\n\nReturn the list of 10 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Beauty & Hygiene",
+    "Beauty & Hygiene",
+    "Beauty & Hygiene",
+    "Beauty & Hygiene",
+    "Beauty & Hygiene",
+    "Beverages",
+    "Beverages",
+    "Beverages",
+    "Beverages",
+    "Beverages"
+   ]
+  }
+ },
+ "c29c4285d00939a768b63e0e59c3dc92b472f7d53c84b7cf4910f0e7275ee206": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Nakoda Tablet Box - Transparent\n2. Baygon Fly & Mosquito Killer Spray\n3. Faber castell Synthetic Paint Brush - Round\n4. Frosch Universal Floor Cleaner - Lavender\n5. Aer Spray - Premium Air Freshener, Relax\n6. Fresho Signature Pork - Garlic Sausage\n7. ITC Master Chef Prawns - Jumbo, Peeled & Deveined\n8. Golden Prize Tuna Salad With Vegetables Mexican Style\n9. Big Sams Frozen Basa Chunks\n10. Fresho Fish - Katla, Head\n\nReturn the list of 10 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Beauty & Hygiene",
+    "Cleaning & Household",
+    "Kitchen, Garden & Pets",
+    "Cleaning & Household",
+    "Beverages",
+    "Gourmet & World Food",
+    "Gourmet & World Food",
+    "Snacks & Branded Foods",
+    "Kitchen, Garden & Pets",
+    "Foodgrains, Oil & Masala"
+   ]
+  }
+ },
+ "83e06859a3e84ea43e83dc1bebb6ca6cc5290a18811f043143c1c70f9458f770": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Kohinoor Kohinoor Basmati Rice -Extra Long, Gold 1 Kg & Garam Masala-E-Khaas, 40 g\n2. bb Royal Organic - Saunf/Sompu\n3. Everest Powder - Dry Mango\n4. Double Horse Roasted Rava\n5. Himalayan Natives Cow Ghee/Tuppa - A2 Gir Bilona\n6. Fresho Lemon\n7. Fresho Apple - Sliced, Royal Gala\n8. Fresho Knol Khol - Organically Grown\n9. Fresho Ready to Cook - Potato French Fries\n10. Fresho Thai Ginger\n\nReturn the list of 10 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Foodgrains, Oil & Masala",
+    "Foodgrains, Oil & Masala",
+    "Foodgrains, Oil & Masala",
+    "Snacks & Branded Foods",
+    "Beverages",
+    "Fruits & Vegetables",
+    "Fruits & Vegetables",
+    "Fruits & Vegetables",
+    "Snacks & Branded Foods",
+    "Foodgrains, Oil & Masala"
+   ]
+  }
+ },
+ "e91b875822a7ce73da60ef2a1da04dc1d3404df12504ea48930fa9d98bd64db8": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Wingreens Farms Chip N Dip - Jalapeno Pita Chips With Sweet Chilli Garlic Dip\n2. Del Monte Pineapple - Slices\n3. Remia Mayonnaise - Mayolite\n4. Entree Dill Baby Gherkins in Vinegar\n5. Agnesi Pasta - Le Elichi Tricolore\n6. Crystal Knife - All Purpose Stainless Steel, Multicolour\n7. Klassic Revolving Cake Stand, KL-28\n8. IAMS Proactive Health Dry Dog Food - Smart Puppy Small & Medium Breed, Up To 1 Year\n9. Ratan Plastic Bottle - Narrow Neck, Blue, Apollo, 20371BL\n10. Pasabahce Karat Whisky Glass Tumbler\n\nReturn the list of 10 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Beauty & Hygiene",
+    "Gourmet & World Food",
+    "Kitchen, Garden & Pets",
+    "Snacks & Branded Foods",
+    "Foodgrains, Oil & Masala",
+    "Cleaning & Household",
+    "Beverages",
+    "Bakery, Cakes & Dairy",
+    "Baby Care",
+    "Fruits & Vegetables"
+   ]
+  }
+ },
+ "d6914e878806475cec26bf3bb47c9598def276ec4c5e72a9f6b3418642eed4b8": {
+  "model": "qwen3:8b",
+  "prompt": "Categories:\n- Beauty & Hygiene\n- Gourmet & World Food\n- Kitchen, Garden & Pets\n- Snacks & Branded Foods\n- Foodgrains, Oil & Masala\n- Cleaning & Household\n- Beverages\n- Bakery, Cakes & Dairy\n- Baby Care\n- Fruits & Vegetables\n- Eggs, Meat & Fish\n\nProducts:\n1. Fazlani Foods Black Gram Lentils Curry-Basmati Rice\n2. A-1 Chips Potato Chips - Classic Salt\n3. LiL'Goodness Carrot Crackers\n4. Kitchens Of India Ready to Eat - Rajma Masala\n5. Aaha Oho Organic Puttu - Millet\n\nReturn the list of 5 categories, in the same order.",
+  "response": {
+   "categories": [
+    "Foodgrains, Oil & Masala",
+    "Snacks & Branded Foods",
+    "Bakery, Cakes & Dairy",
+    "Foodgrains, Oil & Masala",
+    "Foodgrains, Oil & Masala"
+   ]
+  }
+ },
+ "f341634e2515fac41516936bd4e1ab9f55911013a29bde5be85da701bbfd3d60": {
+  "model": "qwen3:8b",
+  "prompt": "Product: True Elements Butterscotch Muesli 400 g Container + Muesli Cranberry Blueberry 400 g\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "true elements muesli butterscotch 400g container muesli cranberry blueberry 400g",
+   "hinglish": "true elements muesli butterscotch 400g container muesli cranberry blueberry 400g"
+  }
+ },
+ "2bd25b505fdd8c1772fcc1f307c9e403d5f1d75f60c355ce27deb96c939f7887": {
+  "model": "qwen3:8b",
+  "prompt": "Product: London Dairy Ice Cream - Mocha Almond Fudge, Family Pack\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "mocha almond fudge ice cream london dairy family pack",
+   "hinglish": "mocha almond fudge ice cream london dairy family pack"
+  }
+ },
+ "5d19d26687da7830837f4e00036d06a627c86c4a47b7e71682a57ddb44f11476": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Ketofy Almond Fudge Keto Cookies\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "ketofy almond fudge keto cookies",
+   "hinglish": "ketofy almond fudge keto cookies"
+  }
+ },
+ "e713fd7a10592be081c3b238f3b7cf7e95e9c36cc74e34d3fc8aa8c11bda9a66": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Pine Sol Multi-Surface Cleaner and Deodorizer - Lavender Clean\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "pine sol multi surface cleaner deodorizer lavender clean",
+   "hinglish": "pine sol multi surface cleaner deodorizer lavender clean"
+  }
+ },
+ "ca2917c1f03ebaa680ff254c437b0cdd044914310237cba76d92d35dc8fa6967": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Vegetal Hairwell\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "vegat hairwell",
+   "hinglish": "vegat hairwell"
+  }
+ },
+ "efbe58c1c6a3b23d5da1107b6f2bebb8a1d3851c76ed147e58e78433a7e21e72": {
+  "model": "qwen3:8b",
+  "prompt": "Product: BIOTIQUE Bio Almond Nourishing Soap 75G+Bio Berry Body Wash 200ml+Bio Apple Shampoo 200ml\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "bio almond nourishing soap 75g bio berry body wash 200ml bio apple shampoo 200ml",
+   "hinglish": "biotique bio almond nourishing soap 75g bio berry body wash 200ml bio apple shampoo 200ml"
+  }
+ },
+ "b6ccdcbe52fa3be3d6e427d74cef5af98a66305de2b38492c1fb55ace4e139c7": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Wc Net Intense Gel Lavender Fresh\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "wc net intense gel lavender fresh",
+   "hinglish": "wc net intense gel lavendar fresh"
+  }
+ },
+ "48825968ff331a9549b337b9bf56c36d761b33e3df3fa6d917951c3471e95720": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Golden Prize Canned Skipjack Light Meat Tuna - Chunk In Olive Oil\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "golden prize canned skipjack light meat tuna chunk in olive oil",
+   "hinglish": "golden prize canned skipjack light meat tuna chunk in tel oil"
+  }
+ },
+ "286cbf8e94a463d1d8aa31d4b7f6e2459d417055f8544e880873fc92ef8a43e0": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Skittles Wildberry Fruit Flavoured Candies\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "skittles wildberry candies fruit flavored small pack",
+   "hinglish": "skittles wildberry candy fruit flavor small pack"
+  }
+ },
+ "03d93e5d170553aa7a7356fcf1aeb44300faa4c16b3d9bd1313bc6e9b0a210da": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Savlon Hexa Advanced Body Wash With Milk Protein\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "savlon hexa advanced body wash with milk protein",
+   "hinglish": "savlon hexa advanced body wash with milk protein"
+  }
+ },
+ "a8f8510b6c2930870e52c499c74dbb2024ca323eb652a23c435282c5d9dc9dd7": {
+  "model": "qwen3:8b",
+  "prompt": "Product: SHEBA Premium Cat Food - Pure Tuna White Meat In Jelly\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "sheba premium cat food pure tuna white meat in jelly",
+   "hinglish": "sheba premium cat food pure tuna white meat in jelly"
+  }
+ },
+ "8555430110948d40d14820a7fbefdd0ffad5c1e38b05b44659f4d1a67106ee4a": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Monini Anfora Olive Oil - Pure\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "monini anfora olive oil pure",
+   "hinglish": "monini anfora tel pure"
+  }
+ },
+ "34dc0fa7fb92c565b7bad7b955502afd309966b611894acb8b9b7b60307918a5": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Too Yumm! Veggie Stix- Chilli Chataka+Multigrain Chips-Dahi Papdi Chaat (72g Get 10g Free)\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "too yumm veggie stix chilli chataka multigrain chips dahi papdi chaat 72g get 10g free",
+   "hinglish": "too yumm veggie stix chilli chataka multigrain chips dahi papdi chaat 72g get 10g free"
+  }
+ },
+ "cffe568e0461a72f920ab3c088033668ee5ebac7eeb77f417c1b48517760cb1b": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Organic Origins Cold Pressed Oil - Sunflower\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "organic origins cold pressed sunflower oil",
+   "hinglish": "organic origins cold pressed sunflower tel"
+  }
+ },
+ "084016c7b7484bde3a2ed320135a034eaf81ce6b1c146d487c6f182ea17ce7a0": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Lays Potato Chips - Indias Magic Masala\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "lays potato chips indias magic masala",
+   "hinglish": "lays potato chips indias magic masala"
+  }
+ },
+ "9903543f4698a4d311a74a9edf923ed5b8b72a0a688dbb1a7201515a6387840e": {
+  "model": "qwen3:8b",
+  "prompt": "Product: bb Royal Rice/Akki - Dosa\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "bb royal rice akki dosa",
+   "hinglish": "bb royal chawal akki dosa"
+  }
+ },
+ "b2e6aa4934299e50bc8d7fee62aef30f89c6bc4d8ef4f3f35b9a43491deff9bf": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Aquawhite Shiva Toothpaste For Kids - Fluoride-Free, Sweet Bubble Gum Flavour\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "aquawhite shiva toothpaste for kids fluoride free sweet bubble gum flavor",
+   "hinglish": "aquawhite shiva toothpaste for kids fluoride free sweet bubble gum flavor"
+  }
+ },
+ "bb4281bbf21bd31b5ef1c85e23e2ce7f5c93d3db2d1306a0a2aad187f871dbf2": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Fresho Signature Croissant - Butter With Hazelnut Spread\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "fresho signature croissant butter with hazelnut spread",
+   "hinglish": "fresho signature krosan butter with hazelnut spread"
+  }
+ },
+ "fe0560d615d49fba9622e8a04d05d4a9f59a1d9a2329d0c68546ba6ff03e1cc7": {
+  "model": "qwen3:8b",
+  "prompt": "Product: Raja Chai/Tea/Coffee Cups & Saucer - Chain Series, Black & White\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "raja chai tea coffee cups saucer chain series black white",
+   "hinglish": "raja chai chai coffee cups saucer chain series black white"
+  }
+ },
+ "b00f34d8d1977320b7743fd39e5ba9d533e3b41ffc830087034421a95ef98e94": {
+  "model": "qwen3:8b",
+  "prompt": "Product: bb Popular Walnut Kernels/Akharot Tukda 200gm + Cashew Whole 500gm + Raisins Indian 500gm\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "bb popular walnut kernels akharot tukda 200gm cashew whole 500gm raisins indian 500gm",
+   "hinglish": "bb popular walnut kernels akharot tukda 200gm cashew whole 500gm raisins indian 500gm"
+  }
+ },
+ "d941debafcfa749c2cb0cb2db25f83b8c3d4a4abdf6fe456fc62a2e130c9e7a2": {
+  "model": "qwen3:8b",
+  "prompt": "Product: NanoNine S.S. Insulated Tea Pot/Flask\nenglish_noisy: the same product written casually in English (lowercase, abbreviations, word order changed), keep brand and size.\nhinglish: the same product in Hinglish: replace the common English food/household words with their Hindi words in Roman script (e.g. turmeric -> haldi, rice -> chawal, lentils -> dal, sugar -> cheeni, salt -> namak, flour -> atta, oil -> tel), keep brand and size.",
+  "response": {
+   "english_noisy": "nano nine s.s. insulated tea pot flask",
+   "hinglish": "nano nine s.s. insulated chai pot flask"
+  }
  }
 }

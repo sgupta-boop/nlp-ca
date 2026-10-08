@@ -1,0 +1,38 @@
+{
+ "adjudicate": {
+  "calls": 0,
+  "cache_hits": 65,
+  "failures": 0,
+  "seconds": 0.0,
+  "output_tokens": 0,
+  "oom_retries": 0,
+  "wall_seconds": 30.2
+ },
+ "names": {
+  "calls": 2,
+  "cache_hits": 8,
+  "failures": 0,
+  "seconds": 101.34371730000004,
+  "output_tokens": 27,
+  "oom_retries": 0,
+  "wall_seconds": 112.7
+ },
+ "categories": {
+  "calls": 6,
+  "cache_hits": 0,
+  "failures": 0,
+  "seconds": 260.4242757999999,
+  "output_tokens": 498,
+  "oom_retries": 0,
+  "wall_seconds": 279.0
+ },
+ "hinglish": {
+  "calls": 7,
+  "cache_hits": 8,
+  "failures": 0,
+  "seconds": 129.2935745000002,
+  "output_tokens": 324,
+  "oom_retries": 0,
+  "wall_seconds": 131.7
+ }
+}

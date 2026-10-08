@@ -1,0 +1,10 @@
+2026-10-08 11:50:56 START python.exe -u -m src.llm_layer adjudicate
+2026-10-08 12:40:28 START python.exe -u -m src.llm_layer adjudicate 65 0
+2026-10-08 12:41:23 END python.exe -u -m src.llm_layer adjudicate 65 0 exit=0
+2026-10-08 12:41:23 START python.exe -u -m src.llm_layer names 10
+2026-10-08 12:43:23 END python.exe -u -m src.llm_layer names 10 exit=0
+2026-10-08 12:43:23 START python.exe -u -m src.llm_layer categories 5 nogoogle
+2026-10-08 12:48:06 END python.exe -u -m src.llm_layer categories 5 nogoogle exit=0
+2026-10-08 12:48:06 START python.exe -u -m src.llm_layer hinglish 15
+2026-10-08 12:58:50 END python.exe -u -m src.llm_layer hinglish 15 exit=0
+2026-10-08 12:58:50 ALL DONE

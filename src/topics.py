@@ -69,10 +69,13 @@ class TopicLabel(BaseModel):
     label: str = Field(max_length=60)
 
 
-def label() -> None:
+def label(max_topics: int = 25) -> None:
     info = pd.read_json(P9 / "topic_info.json")
     labels = []
     for _, r in info.iterrows():
+        if r["Topic"] >= max_topics:           # only the largest topics are named by the LLM (time budget)
+            labels.append(None)
+            continue
         if r["Topic"] == -1:
             labels.append("(outliers)")
             continue

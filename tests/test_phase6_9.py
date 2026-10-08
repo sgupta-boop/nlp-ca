@@ -62,3 +62,14 @@ def test_pipeline_runs_on_a_toy_table():
     assert pre.loc[2, "cluster_id"] != pre.loc[3, "cluster_id"]          # 500 g vs 100 g
     hits = pipeline.search({"preprocessed": pre, "embeddings": res["embeddings"]}, "sunflower oil 1 litre", k=2)
     assert hits["product_name"].str.contains("Sunflower").all()
+
+
+def test_grey_zone_budget_takes_pairs_closest_to_threshold():
+    s = np.array([0.10, 0.69, 0.72, 0.95, 0.70])
+    assert L.grey_zone_budget(s, 0.70, budget=3).tolist() == [False, True, True, False, True]
+
+
+def test_synthetic_rule_keeps_product_and_changes_size_for_negative():
+    out = L.synthetic_rule("Tata Salt Lite 1 kg", random.Random(0))
+    assert len(out["variants"]) == 3 and out["hard_negative"] == "Tata Salt Lite 2 kg"
+    assert out["variants"][1] == "tata salt lite 1 kg"

@@ -1,0 +1,4 @@
+{'dataset': 'abt_buy', 'pairs': 37101, 'grey_zone_pairs': 65, 'llm_calls': 0, 'llm_seconds': 0.0, 'before_precision': 0.737, 'before_recall': 0.769, 'before_f1': 0.753, 'after_precision': 0.754, 'after_recall': 0.767, 'after_f1': 0.76, 'grey_acc_rule': 0.662, 'grey_acc_llm': 0.846}
+dataset  pairs  grey_zone_pairs  llm_calls  llm_seconds  before_precision  before_recall  before_f1  after_precision  after_recall  after_f1  grey_acc_rule  grey_acc_llm
+abt_buy  37101               65          0          0.0             0.737          0.769      0.753            0.754         0.767      0.76          0.662         0.846
+LLM calls=0  cache hits=65  failures=0  time=0.0s  output tokens=0  (0.0 tok/s) wall 30s

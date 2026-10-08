@@ -1,0 +1,132 @@
+[
+ {
+  "cluster_id":15791,
+  "size":2,
+  "members":[
+   "Soyfit Tofu Supreme - Chilli",
+   "Soyfit Tofu Supreme - Chilli"
+  ],
+  "brand":"Soyfit",
+  "medoid_name":"Soyfit Tofu Supreme - Chilli",
+  "llm_name":"Soyfit Tofu Supreme Chilli",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":22505,
+  "size":2,
+  "members":[
+   "Fresho Ridge Gourd - Diced",
+   "Fresho Ridge Gourd - Diced"
+  ],
+  "brand":"Fresho",
+  "medoid_name":"Fresho Ridge Gourd - Diced",
+  "llm_name":"Fresho Ridge Gourd Diced",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":686,
+  "size":2,
+  "members":[
+   "Nike Cool Wind Eau De Toilette Deodorant",
+   "Nike Cool Wind Eau De Toilette Deodorant"
+  ],
+  "brand":"Nike",
+  "medoid_name":"Nike Cool Wind Eau De Toilette Deodorant",
+  "llm_name":"Nike Cool Wind Eau De Toilette Deodorant",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":9570,
+  "size":2,
+  "members":[
+   "Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g",
+   "Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g"
+  ],
+  "brand":"Open Secret",
+  "medoid_name":"Open Secret Choco Almond Nutty Cookies - Box of 2, 25 g + Choco Almond Butter Spread, 175 g",
+  "llm_name":"Open Secret Choco Almond Nutty Cookies Box of 2 25g Choco Almond Butter Spread 175g",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":6989,
+  "size":2,
+  "members":[
+   "bb Royal Organic - Quinoa",
+   "bb Royal Organic - Quinoa"
+  ],
+  "brand":"bb Royal",
+  "medoid_name":"bb Royal Organic - Quinoa",
+  "llm_name":"Bb Royal Organic Quinoa",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":3420,
+  "size":2,
+  "members":[
+   "Cello Dazzle Secret Garden Dinner Set - White",
+   "Cello Dazzle Secret Garden Dinner Set - White"
+  ],
+  "brand":"Cello",
+  "medoid_name":"Cello Dazzle Secret Garden Dinner Set - White",
+  "llm_name":"Cello Dazzle Secret Garden Dinner Set White",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":3867,
+  "size":2,
+  "members":[
+   "Aroma Magic  Wheat Germ Oil",
+   "Aroma Magic  Wheat Germ Oil"
+  ],
+  "brand":"Aroma Magic ",
+  "medoid_name":"Aroma Magic  Wheat Germ Oil",
+  "llm_name":"Aroma Magic Wheat Germ Oil",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":1614,
+  "size":2,
+  "members":[
+   "bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg",
+   "bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg"
+  ],
+  "brand":"bb Combo",
+  "medoid_name":"bb Combo BB Popular Channa Dal 1 kg + Urad Dal - Split 1 kg+BB Royal Rice - Dosa 2 kg",
+  "llm_name":"BB Combo Popular Channa Dal 1 Kg Urad Dal Split 1 Kg BB Royal Rice Dosa 2 Kg",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":11097,
+  "size":2,
+  "members":[
+   "Asian Smart Stackable Cont Set",
+   "Asian Smart Stackable Cont Set"
+  ],
+  "brand":"Asian",
+  "medoid_name":"Asian Smart Stackable Cont Set",
+  "llm_name":"Asian Smart Stackable Cont Set",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ },
+ {
+  "cluster_id":9324,
+  "size":2,
+  "members":[
+   "MAGGI  Cuppa Noodles - Chilli Chow",
+   "MAGGI  Cuppa Noodles - Chilli Chow"
+  ],
+  "brand":"MAGGI ",
+  "medoid_name":"MAGGI  Cuppa Noodles - Chilli Chow",
+  "llm_name":"Maggi Cuppa Noodles Chilli Chow",
+  "llm_has_brand":true,
+  "medoid_has_brand":true
+ }
+]

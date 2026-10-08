@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
-# Runs the long LLM jobs one after another, detached from the editor session.
-# Every LLM answer is cached, so re-running a job only computes what is missing.
-#   usage: bash scripts/run_llm_jobs.sh <job> [<job> ...]   (jobs: llm_pave, llm_label)
+# Runs long LLM steps one after another, detached from the editor session.
+# Every LLM answer is cached in cache/llm_responses.json, so a re-run only computes what is missing.
+#   usage: bash scripts/run_llm_jobs.sh "python -m src.llm_layer adjudicate" "python -m src.llm_layer names" ...
 cd "$(dirname "$0")/.."
 export PYTHONIOENCODING=utf-8
 LOG=reports/llm_jobs.log
-# wait for any extraction run that is already going
-running() { powershell -NoProfile -c "@(Get-CimInstance Win32_Process | Where-Object { \$_.CommandLine -like '*-m src.extract*' }).Count"; }
-while [ "$(running | tr -d '\r')" != "0" ]; do sleep 30; done
-for job in "$@"; do
-  echo "$(date '+%F %T') START $job" >> "$LOG"
-  case $job in
-    llm_pave)  .venv/Scripts/python.exe -u -m src.extract llm_pave  > reports/phase3_run_llm_pave.txt 2>&1 ;;
-    llm_label) .venv/Scripts/python.exe -u -m src.extract llm_label 1000 > reports/phase3_run_llm_label.txt 2>&1 ;;
-  esac
-  echo "$(date '+%F %T') END $job exit=$?" >> "$LOG"
+for cmd in "$@"; do
+  name=$(echo "$cmd" | awk '{print $5"_"$6}' | tr '.' '_')
+  echo "$(date '+%F %T') START $cmd" >> "$LOG"
+  .venv/Scripts/$cmd > "reports/run_${name}.txt" 2>&1
+  echo "$(date '+%F %T') END $cmd exit=$?" >> "$LOG"
 done
+echo "$(date '+%F %T') ALL DONE" >> "$LOG"

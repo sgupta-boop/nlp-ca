@@ -39,7 +39,7 @@ P8 = ROOT / "data" / "processed" / "phase8"
 FT_MODEL = ROOT / "models" / "minilm-products"
 CONFIGS = ["1 rules + fuzzy", "2 TF-IDF cosine", "3 fastText cosine", "4 SBERT cosine", "5 SBERT + NER rules",
            "6 fine-tuned SBERT + NER + LLM"]
-GREY = 0.10   # grey zone = threshold +/- 0.10
+LLM_BUDGET = 20   # grey zone = the 20 pairs per test set closest to the threshold (time budget: ~15 s per call)
 
 
 def pair_features(a_raw: list[str], b_raw: list[str], a_brand=None, b_brand=None) -> pd.DataFrame:
@@ -143,7 +143,7 @@ def llm_step() -> None:
     for name, val, test in datasets():
         f_val, y_val, f_test, _, extra = val_test(name, val, test)
         s, p = decide(f_val, y_val, f_test, CONFIGS[5], extra)
-        grey = np.where(np.abs(s - p["threshold"]) < GREY)[0]
+        grey = np.argsort(np.abs(s - p["threshold"]))[:LLM_BUDGET]     # the pairs closest to the threshold
         answers = {}
         for k in grey:
             r = adjudicate(f_test["name_a"].iat[k], f_test["name_b"].iat[k])
@@ -294,7 +294,7 @@ def cost(n: int = 1000) -> dict:
     best = res.iloc[res["val_f1"].idxmax()]
     s = bigbasket_score(f, best["w_sbert"], True, "MRP" in best["config"])
     times["5 blocking + hybrid scoring"] = time.perf_counter() - t
-    grey = np.where(np.abs(s - best["threshold"]) < GREY)[0]
+    grey = np.argsort(np.abs(s - best["threshold"]))[:LLM_BUDGET]
     del E
     import gc
     gc.collect()

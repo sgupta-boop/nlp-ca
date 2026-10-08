@@ -39,6 +39,13 @@ def grey_zone(scores: np.ndarray, threshold: float, low: float, high: float) -> 
     return (scores >= threshold - low) & (scores < threshold + high)
 
 
+def grey_zone_budget(scores: np.ndarray, threshold: float, budget: int = 200) -> np.ndarray:
+    """The `budget` pairs whose score is closest to the threshold (a fixed LLM budget per dataset)."""
+    mask = np.zeros(len(scores), dtype=bool)
+    mask[np.argsort(np.abs(scores - threshold))[:budget]] = True
+    return mask
+
+
 # ---------------------------------------------------------------- 2. canonical naming
 class CanonicalName(BaseModel):
     name: str = Field(max_length=120)
@@ -201,7 +208,7 @@ def prepare_adjudication(low: float = 0.10, high: float = 0.10) -> None:
     c = c[~c["is_val"]].copy()
     c["score"] = hybrid_score(c, p["w"], p["brand_penalty"], p["model_penalty"])
     c["pred_rule"] = c["score"] >= p["threshold"]
-    c["grey"] = grey_zone(c["score"].values, p["threshold"], low, high)
+    c["grey"] = grey_zone_budget(c["score"].values, p["threshold"])
     left, right, gold = load_benchmark("abt_buy")
     c["name_a"] = c["left_id"].map(dict(zip(left["id"], left["raw"])))
     c["name_b"] = c["right_id"].map(dict(zip(right["id"], right["raw"])))
@@ -215,21 +222,29 @@ def prepare_adjudication(low: float = 0.10, high: float = 0.10) -> None:
     f = wdc_pair_features(t, get_sbert(SBERT))
     f["score"] = hybrid_score(f, p["w"], p["brand_penalty"], p["model_penalty"])
     f["pred_rule"] = f["score"] >= p["threshold"]
-    f["grey"] = grey_zone(f["score"].values, p["threshold"], low, high)
+    f["grey"] = grey_zone_budget(f["score"].values, p["threshold"])
     f["label"] = t["label"].values.astype(bool)
     f["name_a"], f["name_b"] = t["title_left"].values, t["title_right"].values
     f.to_parquet(P6 / "adj_wdc.parquet")
+    for name, d, t in (("abt_buy", c, meta["abt_buy"]["params"]["hybrid + all rules"]["threshold"]), ("wdc", f, p["threshold"])):
+        band = np.abs(d.loc[d["grey"], "score"] - t).max()
+        print(f"{name}: grey zone = threshold +/- {band:.3f}")
     print({"abt_buy_grey": int(c["grey"].sum()), "abt_buy_test_candidates": len(c),
            "wdc_grey": int(f["grey"].sum()), "wdc_test_pairs": len(f)})
 
 
-def run_adjudication() -> pd.DataFrame:
+def run_adjudication(max_calls: dict | None = None) -> pd.DataFrame:
+    """max_calls limits the LLM decisions per dataset (time budget); grey pairs beyond it keep the rule decision."""
     from src.match import prf
+    max_calls = max_calls or {"abt_buy": 200, "wdc": 200}
     rows = []
-    for name in ("abt_buy", "wdc"):
+    for name in [n for n in ("abt_buy", "wdc") if max_calls.get(n, 0) > 0]:
         d = pd.read_parquet(P6 / f"adj_{name}.parquet").reset_index(drop=True)
         before, t0 = llm.STATS["calls"], llm.STATS["seconds"]
-        decisions = {k: adjudicate(d["name_a"].iat[k], d["name_b"].iat[k]) for k in np.where(d["grey"].values)[0]}
+        asked = np.where(d["grey"].values)[0][:max_calls[name]]
+        d["grey"] = False
+        d.loc[asked, "grey"] = True
+        decisions = {k: adjudicate(d["name_a"].iat[k], d["name_b"].iat[k]) for k in asked}
         d["pred_llm"] = d["pred_rule"]
         for k, r in decisions.items():
             if r is not None:
@@ -275,8 +290,8 @@ def prepare_names(n_clusters: int = 100) -> None:
     pd.DataFrame(rows).to_json(P6 / "names_input.json", orient="records", indent=1, force_ascii=False)
 
 
-def run_names() -> pd.DataFrame:
-    d = pd.read_json(P6 / "names_input.json")
+def run_names(n: int = 100) -> pd.DataFrame:
+    d = pd.read_json(P6 / "names_input.json").head(n)
     d["llm_name"] = [canonical_name(m) for m in d["members"]]
     has = lambda name, brand: isinstance(name, str) and str(brand).lower() in name.lower()
     d["llm_has_brand"] = [has(n, b) for n, b in zip(d["llm_name"], d["brand"])]
@@ -302,22 +317,31 @@ def prepare_categories() -> None:
     s.to_parquet(P6 / "categories_input.parquet")
 
 
-def run_categories() -> pd.DataFrame:
+def run_categories(llm_per_class: int = 50, google: bool = True) -> pd.DataFrame:
+    """Embedding baselines on all 550 sampled products; the LLM on `llm_per_class` per category
+    (embeddings are also scored on that same subset, so the comparison is like for like)."""
     s = pd.read_parquet(P6 / "categories_input.parquet")
+    sub = pd.concat([g.head(llm_per_class) for _, g in s.groupby("category")]).copy()
     before = llm.STATS["calls"]
-    s["llm_bb"] = categorize_llm(s["text"].tolist())
-    calls_bb, before = llm.STATS["calls"] - before, llm.STATS["calls"]
-    s["llm_google"] = categorize_llm_google(s["text"].tolist())
-    calls_g = llm.STATS["calls"] - before
-    s["gold_google"] = s["category"].map(BB_TO_GOOGLE)
-    rows = [{"label set": "BigBasket (11)", "method": "embedding cosine, MiniLM",
+    sub["llm_bb"] = categorize_llm(sub["text"].tolist())
+    calls_bb = llm.STATS["calls"] - before
+    rows = [{"label set": "BigBasket (11)", "products": len(s), "method": "embedding cosine, MiniLM",
              **_metrics_cls(s["category"], s["emb_minilm"]), "llm_calls": 0},
-            {"label set": "BigBasket (11)", "method": "embedding cosine, BGE-small",
+            {"label set": "BigBasket (11)", "products": len(s), "method": "embedding cosine, BGE-small",
              **_metrics_cls(s["category"], s["emb_bge"]), "llm_calls": 0},
-            {"label set": "BigBasket (11)", "method": "LLM zero-shot (qwen3:8b)",
-             **_metrics_cls(s["category"], s["llm_bb"]), "llm_calls": calls_bb},
-            {"label set": "Google top-level (21)", "method": "LLM zero-shot (qwen3:8b)",
-             **_metrics_cls(s["gold_google"], s["llm_google"]), "llm_calls": calls_g}]
+            {"label set": "BigBasket (11)", "products": len(sub), "method": "embedding cosine, MiniLM",
+             **_metrics_cls(sub["category"], sub["emb_minilm"]), "llm_calls": 0},
+            {"label set": "BigBasket (11)", "products": len(sub), "method": "embedding cosine, BGE-small",
+             **_metrics_cls(sub["category"], sub["emb_bge"]), "llm_calls": 0},
+            {"label set": "BigBasket (11)", "products": len(sub), "method": "LLM zero-shot (qwen3:8b)",
+             **_metrics_cls(sub["category"], sub["llm_bb"]), "llm_calls": calls_bb}]
+    if google:
+        before = llm.STATS["calls"]
+        sub["llm_google"] = categorize_llm_google(sub["text"].tolist())
+        sub["gold_google"] = sub["category"].map(BB_TO_GOOGLE)
+        rows.append({"label set": "Google top-level (21)", "products": len(sub), "method": "LLM zero-shot (qwen3:8b)",
+                     **_metrics_cls(sub["gold_google"], sub["llm_google"]), "llm_calls": llm.STATS["calls"] - before})
+    s = sub
     s.to_parquet(OUT / "phase6_categories_preds.parquet")
     res = pd.DataFrame(rows)
     res.to_csv(OUT / "phase6_categorization.csv", index=False)
@@ -328,6 +352,35 @@ def synthetic_names(n: int = 200, offset: int = 0) -> list[str]:
     bb = data_io.load_bigbasket().drop_duplicates("product").sample(frac=1, random_state=SEED + 1)
     names = (bb["brand"].fillna("") + " " + bb["product"]).str.strip().tolist()
     return names[offset:offset + n]
+
+
+ABBREV_OUT = {"packet": "pkt", "pieces": "pcs", "chocolate": "choco", "gram": "gm", "grams": "gms",
+              "litre": "ltr", "liter": "ltr", "and": "&", "with": "w/", "medium": "med", "large": "lrg"}
+
+
+def synthetic_rule(name: str, rng) -> dict:
+    """Noisy variants of the SAME product (typos, abbreviations, word order) and one hard negative
+    (same wording, different size or variant), made by rules without the LLM."""
+    import re as _re
+    from src.preprocess import add_typo
+    words = name.split()
+    v1 = " ".join(add_typo(w, rng) if len(w) > 4 and rng.random() < 0.3 else w for w in words)
+    v2 = " ".join(ABBREV_OUT.get(w.lower(), w) for w in words).lower()
+    v3 = " ".join(words[1:] + words[:1]) if len(words) > 2 else name.upper()
+    m = _re.search(r"\d+(\.\d+)?", name)
+    if m:
+        neg = name[:m.start()] + f"{float(m.group()) * 2:g}" + name[m.end():]
+    else:
+        neg = name + rng.choice([" - Pack of 2", " 500 g", " - Large", " - Sugar Free"])
+    return {"anchor": name, "variants": [v1, v2, v3], "hard_negative": neg, "made_by": "rules"}
+
+
+def run_synthetic_rules(n: int = 2000) -> pd.DataFrame:
+    import random as _random
+    rng = _random.Random(SEED)
+    d = pd.DataFrame([synthetic_rule(name, rng) for name in synthetic_names(n)])
+    d.to_json(ROOT / "data" / "processed" / "synthetic_pairs.json", orient="records", indent=1, force_ascii=False)
+    return d
 
 
 def run_synthetic(n: int = 200) -> pd.DataFrame:
@@ -343,8 +396,13 @@ def run_synthetic(n: int = 200) -> pd.DataFrame:
 
 def run_hinglish(n_test: int = 200) -> pd.DataFrame:
     """Test names are disjoint from the synthetic-data names (different offset)."""
+    import re as _re
+    from src.finetune import HINDI_WORDS
+    # only names that contain a grocery word with a common Hindi equivalent can be written in Hinglish
+    pattern = _re.compile(r"\b(" + "|".join(sorted(HINDI_WORDS, key=len, reverse=True)) + r")\b", _re.I)
+    candidates = [n for n in synthetic_names(20000, offset=1000) if pattern.search(n)]
     rows = []
-    for name in synthetic_names(n_test, offset=1000):
+    for name in candidates[:n_test]:
         h = hinglish(name)
         if h is not None:
             rows.append({"original": name, "english_noisy": h.english_noisy, "hinglish": h.hinglish,
@@ -366,18 +424,23 @@ if __name__ == "__main__":
         prepare_names()
         prepare_categories()
     elif step == "adjudicate":
-        print(run_adjudication().to_string(index=False))
+        n = int(sys.argv[2]) if len(sys.argv) > 2 else 200
+        m = int(sys.argv[3]) if len(sys.argv) > 3 else 200
+        print(run_adjudication({"abt_buy": n, "wdc": m}).to_string(index=False))
     elif step == "names":
-        d = run_names()
+        d = run_names(int(sys.argv[2]) if len(sys.argv) > 2 else 100)
         print(d[["size", "medoid_name", "llm_name"]].head(20).to_string(index=False))
         print("brand kept: llm", d["llm_has_brand"].mean(), "medoid", d["medoid_has_brand"].mean())
     elif step == "categories":
-        print(run_categories().to_string(index=False))
+        print(run_categories(int(sys.argv[2]) if len(sys.argv) > 2 else 50,
+                             google=len(sys.argv) <= 3).to_string(index=False))
+    elif step == "synthetic_rules":
+        print(run_synthetic_rules().head(3).to_string())
     elif step == "synthetic":
         print(len(run_synthetic()), "synthetic anchors")
     elif step == "hinglish":
-        print(len(run_hinglish()), "hinglish test items")
-    if step != "prepare":
+        print(len(run_hinglish(int(sys.argv[2]) if len(sys.argv) > 2 else 200)), "hinglish test items")
+    if step not in ("prepare", "synthetic_rules"):
         print(llm.report(), f"wall {time.perf_counter() - t0:.0f}s")
         stats_path = OUT / "phase6_llm_usage.json"
         usage = json.loads(stats_path.read_text()) if stats_path.exists() else {}
