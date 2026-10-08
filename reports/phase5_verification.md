@@ -76,7 +76,7 @@ Tuned values for "hybrid + all rules": Abt-Buy w = 0.75, model-number penalty 0.
 
 | # | Pair / cluster | Outcome | Why |
 |---|---|---|---|
-| 1 | Abt `Sony … TV Wall Mount - VMPL3B` vs Buy with a different code | correctly rejected | the model-number rule turns a high cosine into a non-match (the source of the 0.53 → 0.75 jump) |
+| 1 | All Abt-Buy test candidates | F1 0.530 → **0.753** when the model-number rule is switched on (table 3.2) | pairs with high cosine but different model codes are penalised below the threshold |
 | 2 | Abt `Sony DVP-FX820 Black 8' Portable DVD Player` vs Buy `Sony DVP-FX820/P Portable DVD Player` | **false positive** (s = 0.953) | colour variants differ only by a suffix (/P, /L, /R); "dvpfx820" is a prefix of "dvpfx820p", so the rule treats them as agreeing |
 | 3 | Abt `Canon Color Ink Tank - CL41CL` vs Buy `Canon Ink Cartridge … - 0617B002` | **false negative** (s = 0.22) | the same cartridge under two numbering schemes (retail code vs part number); the code rule penalizes it and char overlap is low |
 | 4 | BigBasket cluster 2440: 12 × `Revlon Colorsilk Hair Colour With Keratin` (MRP 435) | **over-merged** | different shades share one name and MRP; no text signal separates them |
