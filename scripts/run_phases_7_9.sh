@@ -9,7 +9,8 @@ run() {   # run <name> <python args...>
   local name=$1; shift
   echo "$(date '+%F %T') START $name" >> "$LOG"
   .venv/Scripts/python.exe -u "$@" > "reports/run_${name}.txt" 2>&1
-  echo "$(date '+%F %T') END $name exit=$?" >> "$LOG"
+  local rc=$?
+  echo "$(date '+%F %T') END $name exit=$rc" >> "$LOG"
 }
 run p7_train      -m src.finetune train
 run p7_evaluate   -m src.finetune evaluate

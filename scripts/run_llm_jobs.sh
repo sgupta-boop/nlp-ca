@@ -9,6 +9,7 @@ for cmd in "$@"; do
   name=$(echo "$cmd" | awk '{print $5"_"$6}' | tr '.' '_')
   echo "$(date '+%F %T') START $cmd" >> "$LOG"
   .venv/Scripts/$cmd > "reports/run_${name}.txt" 2>&1
-  echo "$(date '+%F %T') END $cmd exit=$?" >> "$LOG"
+  rc=$?
+  echo "$(date '+%F %T') END $cmd exit=$rc" >> "$LOG"
 done
 echo "$(date '+%F %T') ALL DONE" >> "$LOG"
