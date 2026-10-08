@@ -1,2 +1,5 @@
 ﻿
 2026-10-08 13:11:00 START p7_train
+2026-10-08 13:16:07 END p7_train exit=1
+2026-10-08 13:16:07 START p7_evaluate
+2026-10-08 13:16:33 START p7_train_hi

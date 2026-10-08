@@ -39,7 +39,7 @@ P8 = ROOT / "data" / "processed" / "phase8"
 FT_MODEL = ROOT / "models" / "minilm-products"
 CONFIGS = ["1 rules + fuzzy", "2 TF-IDF cosine", "3 fastText cosine", "4 SBERT cosine", "5 SBERT + NER rules",
            "6 fine-tuned SBERT + NER + LLM"]
-LLM_BUDGET = 20   # grey zone = the 20 pairs per test set closest to the threshold (time budget: ~15 s per call)
+LLM_BUDGET = 0    # no new LLM calls in Phase 8 (time limit); the LLM effect is measured in Phase 6
 
 
 def pair_features(a_raw: list[str], b_raw: list[str], a_brand=None, b_brand=None) -> pd.DataFrame:

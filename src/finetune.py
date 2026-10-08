@@ -87,6 +87,8 @@ def spelling_variant(text: str, variants: dict, rng: random.Random) -> str:
 
 def to_hinglish(name: str) -> str | None:
     """Replace English grocery words by their Hindi words; None if nothing was replaced."""
+    if not isinstance(name, str):
+        return None
     t = name.lower()
     changed = False
     for en, hi in sorted(HINDI_WORDS.items(), key=lambda kv: -len(kv[0])):
@@ -239,7 +241,7 @@ def evaluate() -> None:
 if __name__ == "__main__":
     step = sys.argv[1]
     if step == "train":
-        infos = [train(FT), train(FT_HI, hinglish_aug=True)]
+        infos = [train(FT), train(FT_HI, hinglish_aug=True)] if len(sys.argv) < 3 else [train(FT_HI, hinglish_aug=True)]
         pd.DataFrame(infos).to_csv(OUT / "phase7_training.csv", index=False)
     elif step == "evaluate":
         evaluate()

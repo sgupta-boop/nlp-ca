@@ -4,7 +4,7 @@
 cd "$(dirname "$0")/.."
 export PYTHONIOENCODING=utf-8
 LOG=reports/pipeline_7_9.log
-until grep -q "ALL DONE" reports/llm_jobs.log; do sleep 15; done
+# (Phase 6 already finished)
 run() {   # run <name> <python args...>
   local name=$1; shift
   echo "$(date '+%F %T') START $name" >> "$LOG"
@@ -12,7 +12,7 @@ run() {   # run <name> <python args...>
   local rc=$?
   echo "$(date '+%F %T') END $name exit=$rc" >> "$LOG"
 }
-run p7_train      -m src.finetune train
+run p7_train_hi  -m src.finetune train hinglish_only
 run p7_evaluate   -m src.finetune evaluate
 run p8_prepare    -m src.evaluate prepare
 run p8_llm        -m src.evaluate llm

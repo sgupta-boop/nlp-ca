@@ -69,7 +69,7 @@ class TopicLabel(BaseModel):
     label: str = Field(max_length=60)
 
 
-def label(max_topics: int = 25) -> None:
+def label(max_topics: int = 0) -> None:   # 0 = no LLM topic labels (time limit)
     info = pd.read_json(P9 / "topic_info.json")
     labels = []
     for _, r in info.iterrows():
