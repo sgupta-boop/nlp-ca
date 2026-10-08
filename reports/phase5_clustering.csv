@@ -1,0 +1,5 @@
+method,threshold,ARI,NMI,V-measure,clusters
+connected components,0.7,0.192,0.932,0.932,749
+agglomerative (average),0.525,0.296,0.924,0.924,530
+HDBSCAN (SBERT vectors),,0.174,0.887,0.887,374
+baseline: every offer alone,,0.0,0.947,0.947,1000

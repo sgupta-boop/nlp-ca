@@ -1,0 +1,23 @@
+dataset,config,precision,recall,f1,val_f1,w_sbert,brand_penalty,model_penalty,threshold
+abt_buy,char TF-IDF only,0.542,0.516,0.529,0.533,0.0,0.0,0.0,0.671
+abt_buy,SBERT only,0.436,0.475,0.455,0.453,1.0,0.0,0.0,0.838
+abt_buy,hybrid (no rules),0.542,0.516,0.529,0.533,0.0,0.0,0.0,0.671
+abt_buy,hybrid + rules (no model-number rule),0.544,0.516,0.53,0.533,0.0,0.0,0.0,0.671
+abt_buy,hybrid + all rules,0.737,0.769,0.753,0.737,0.75,0.0,0.2,0.685
+amazon_google,char TF-IDF only,0.447,0.595,0.511,0.511,0.0,0.0,0.0,0.69
+amazon_google,SBERT only,0.388,0.445,0.415,0.41,1.0,0.0,0.0,0.777
+amazon_google,hybrid (no rules),0.447,0.595,0.511,0.511,0.0,0.0,0.0,0.69
+amazon_google,hybrid + rules (no model-number rule),0.446,0.594,0.51,0.511,0.0,0.0,0.0,0.69
+amazon_google,hybrid + all rules,0.448,0.592,0.51,0.516,0.0,0.0,0.2,0.69
+WDC 80% cc test (0% unseen),char TF-IDF only,0.207,0.642,0.313,0.32,0.0,0.0,0.0,0.389
+WDC 80% cc test (50% unseen),char TF-IDF only,0.248,0.784,0.376,0.32,0.0,0.0,0.0,0.389
+WDC 80% cc test (100% unseen),char TF-IDF only,0.249,0.75,0.374,0.32,0.0,0.0,0.0,0.389
+WDC 80% cc test (0% unseen),SBERT only,0.197,0.554,0.291,0.307,1.0,0.0,0.0,0.671
+WDC 80% cc test (50% unseen),SBERT only,0.226,0.692,0.341,0.307,1.0,0.0,0.0,0.671
+WDC 80% cc test (100% unseen),SBERT only,0.236,0.63,0.343,0.307,1.0,0.0,0.0,0.671
+WDC 80% cc test (0% unseen),hybrid (no rules),0.202,0.646,0.307,0.322,0.5,0.0,0.0,0.513
+WDC 80% cc test (50% unseen),hybrid (no rules),0.235,0.774,0.361,0.322,0.5,0.0,0.0,0.513
+WDC 80% cc test (100% unseen),hybrid (no rules),0.246,0.746,0.37,0.322,0.5,0.0,0.0,0.513
+WDC 80% cc test (0% unseen),hybrid + all rules,0.282,0.58,0.379,0.384,0.5,0.0,0.2,0.513
+WDC 80% cc test (50% unseen),hybrid + all rules,0.317,0.722,0.441,0.384,0.5,0.0,0.2,0.513
+WDC 80% cc test (100% unseen),hybrid + all rules,0.314,0.692,0.432,0.384,0.5,0.0,0.2,0.513

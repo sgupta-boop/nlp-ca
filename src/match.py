@@ -255,7 +255,7 @@ def similarity_matrix(texts_raw: list[str], model, w: float, brand_penalty: floa
     T = normalize(TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), sublinear_tf=True).fit_transform(texts))
     S = w * (E @ E.T) + (1 - w) * (T @ T.T).toarray()
     if use_rules:
-        b = attr["brand"].values
+        b = attr["brand"].to_numpy(dtype=object)        # plain numpy: Arrow string arrays cannot broadcast
         known = pd.notna(b)
         brand_conf = known[:, None] & known[None, :] & (b[:, None] != b[None, :])
         codes = attr["codes"].tolist()
@@ -265,7 +265,9 @@ def similarity_matrix(texts_raw: list[str], model, w: float, brand_penalty: floa
         for a, c in itertools.combinations(has, 2):
             if codes_conflict(codes[a], codes[c]):
                 code_conf[a, c] = code_conf[c, a] = True
-        q, u, pk = attr["qty_value"].values.astype(float), attr["qty_unit"].values, attr["pack_count"].values.astype(float)
+        q = attr["qty_value"].to_numpy(dtype=float, na_value=np.nan)
+        u = attr["qty_unit"].to_numpy(dtype=object)
+        pk = attr["pack_count"].to_numpy(dtype=float, na_value=np.nan)
         hq = ~np.isnan(q)
         rel = np.abs(q[:, None] - q[None, :]) / np.maximum(np.abs(q[:, None]), 1e-9)
         qty_conf = hq[:, None] & hq[None, :] & (u[:, None] == u[None, :]) & (rel > 0.02)
@@ -375,16 +377,18 @@ def bigbasket_features(bb: pd.DataFrame, pairs: np.ndarray, E: np.ndarray, T) ->
         a, b = T[i[s:s + 50_000]], T[j[s:s + 50_000]]
         char[s:s + 50_000] = np.asarray(a.multiply(b).sum(axis=1)).ravel()
     f["char"] = char
-    q, u, pk = bb["qty_value"].values, bb["qty_unit"].values, bb["pack_count"].values
+    q = bb["qty_value"].to_numpy(dtype=float, na_value=np.nan)
+    u = bb["qty_unit"].to_numpy(dtype=object)
+    pk = bb["pack_count"].to_numpy(dtype=float, na_value=np.nan)
     both_q = ~pd.isna(q[i]) & ~pd.isna(q[j]) & (u[i] == u[j])
     with np.errstate(invalid="ignore", divide="ignore"):
         rel = np.abs(q[i].astype(float) - q[j].astype(float)) / np.maximum(np.abs(q[i].astype(float)), 1e-9)
     f["qty_conflict"] = both_q & (rel > 0.02)
     f["pack_conflict"] = ~pd.isna(pk[i]) & ~pd.isna(pk[j]) & (pk[i] != pk[j])
-    b = bb["brand"].fillna("").str.lower().values
+    b = bb["brand"].fillna("").astype(str).str.lower().to_numpy(dtype=object)
     f["brand_conflict"] = (b[i] != "") & (b[j] != "") & (b[i] != b[j])
     f["code_conflict"] = False
-    mrp = bb["mrp"].values.astype(float)
+    mrp = bb["mrp"].to_numpy(dtype=float, na_value=np.nan)
     with np.errstate(invalid="ignore", divide="ignore"):
         f["mrp_conflict"] = np.abs(mrp[i] - mrp[j]) / np.maximum(mrp[i], mrp[j]) > 0.05
     return f

@@ -1,0 +1,32 @@
+dataset                                config  precision  recall    f1  val_f1  w_sbert  brand_penalty  model_penalty  threshold
+abt_buy                      char TF-IDF only      0.542   0.516 0.529   0.533     0.00            0.0            0.0      0.671
+abt_buy                            SBERT only      0.436   0.475 0.455   0.453     1.00            0.0            0.0      0.838
+abt_buy                     hybrid (no rules)      0.542   0.516 0.529   0.533     0.00            0.0            0.0      0.671
+abt_buy hybrid + rules (no model-number rule)      0.544   0.516 0.530   0.533     0.00            0.0            0.0      0.671
+abt_buy                    hybrid + all rules      0.737   0.769 0.753   0.737     0.75            0.0            0.2      0.685 
+blocking: {'candidates': 76075, 'all_pairs': 1180452, 'reduction_ratio': 0.9356, 'pair_completeness': np.float64(0.999), 'seconds': 0.3}
+      dataset                                config  precision  recall    f1  val_f1  w_sbert  brand_penalty  model_penalty  threshold
+amazon_google                      char TF-IDF only      0.447   0.595 0.511   0.511      0.0            0.0            0.0      0.690
+amazon_google                            SBERT only      0.388   0.445 0.415   0.410      1.0            0.0            0.0      0.777
+amazon_google                     hybrid (no rules)      0.447   0.595 0.511   0.511      0.0            0.0            0.0      0.690
+amazon_google hybrid + rules (no model-number rule)      0.446   0.594 0.510   0.511      0.0            0.0            0.0      0.690
+amazon_google                    hybrid + all rules      0.448   0.592 0.510   0.516      0.0            0.0            0.2      0.690 
+blocking: {'candidates': 102932, 'all_pairs': 4397038, 'reduction_ratio': 0.9766, 'pair_completeness': np.float64(0.991), 'seconds': 0.2}
+                      dataset             config  precision  recall    f1  val_f1  w_sbert  brand_penalty  model_penalty  threshold
+  WDC 80% cc test (0% unseen)   char TF-IDF only      0.207   0.642 0.313   0.320      0.0            0.0            0.0      0.389
+ WDC 80% cc test (50% unseen)   char TF-IDF only      0.248   0.784 0.376   0.320      0.0            0.0            0.0      0.389
+WDC 80% cc test (100% unseen)   char TF-IDF only      0.249   0.750 0.374   0.320      0.0            0.0            0.0      0.389
+  WDC 80% cc test (0% unseen)         SBERT only      0.197   0.554 0.291   0.307      1.0            0.0            0.0      0.671
+ WDC 80% cc test (50% unseen)         SBERT only      0.226   0.692 0.341   0.307      1.0            0.0            0.0      0.671
+WDC 80% cc test (100% unseen)         SBERT only      0.236   0.630 0.343   0.307      1.0            0.0            0.0      0.671
+  WDC 80% cc test (0% unseen)  hybrid (no rules)      0.202   0.646 0.307   0.322      0.5            0.0            0.0      0.513
+ WDC 80% cc test (50% unseen)  hybrid (no rules)      0.235   0.774 0.361   0.322      0.5            0.0            0.0      0.513
+WDC 80% cc test (100% unseen)  hybrid (no rules)      0.246   0.746 0.370   0.322      0.5            0.0            0.0      0.513
+  WDC 80% cc test (0% unseen) hybrid + all rules      0.282   0.580 0.379   0.384      0.5            0.0            0.2      0.513
+ WDC 80% cc test (50% unseen) hybrid + all rules      0.317   0.722 0.441   0.384      0.5            0.0            0.2      0.513
+WDC 80% cc test (100% unseen) hybrid + all rules      0.314   0.692 0.432   0.384      0.5            0.0            0.2      0.513
+                     method  threshold   ARI   NMI  V-measure  clusters
+       connected components      0.700 0.192 0.932      0.932       749
+    agglomerative (average)      0.525 0.296 0.924      0.924       530
+    HDBSCAN (SBERT vectors)        NaN 0.174 0.887      0.887       374
+baseline: every offer alone        NaN 0.000 0.947      0.947      1000 {'thresholds': {'connected components': 0.7, 'agglomerative (average)': 0.525}, 'test_offers': 1000, 'test_products': 500}
