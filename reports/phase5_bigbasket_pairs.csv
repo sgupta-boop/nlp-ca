@@ -1,0 +1,6 @@
+config,precision,recall,f1,val_f1,w_sbert,threshold,test_pairs,test_positives
+char TF-IDF only,0.408,0.879,0.558,0.532,0.0,1.0,251,33
+SBERT only,0.45,0.818,0.581,0.549,1.0,1.0,251,33
+hybrid (no rules),0.45,0.818,0.581,0.549,0.25,1.0,251,33
+hybrid + qty/pack/brand rules,0.45,0.818,0.581,0.549,0.25,1.0,251,33
+hybrid + rules + MRP rule,0.935,0.879,0.906,0.962,0.0,1.0,251,33

@@ -66,6 +66,7 @@ Loaders for all of them are in `src/data_io.py`.
 | 2 Preprocessing | `python -m src.preprocess` | `data/processed/*_pre.parquet`, `reports/phase2_*`, `notebooks/02_preprocess.ipynb` |
 | 3 Attribute extraction | `python -m src.extract rules_gliner`, `... llm_pave` (LLM, ~80 min), `... gliner_label 2000`, `... distill` | `reports/phase3_*`, `models/ner_distilled`, `notebooks/03_extract.ipynb` |
 | 4 Representations | `python -m src.embed` | `reports/phase4_retrieval.csv`, `models/fasttext_products.model`, `notebooks/04_embed.ipynb` |
+| 5 Matching + clustering | `python -m src.match`, `python -m src.match bb_sample`, `python -m src.match bb_eval` | `reports/phase5_*`, `data/processed/bigbasket_clusters.parquet`, `notebooks/05_match.ipynb` |
 
 Tests: `python -m pytest -v`
 

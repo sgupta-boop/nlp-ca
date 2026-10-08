@@ -1,0 +1,8 @@
+{
+ "config_used": "hybrid + rules + MRP rule",
+ "records": 27555,
+ "clusters": 26487,
+ "multi_member_clusters": 996,
+ "records_in_multi": 2064,
+ "largest_cluster": 12
+}

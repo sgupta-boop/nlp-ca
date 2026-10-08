@@ -1,0 +1,7 @@
+                       config  precision  recall    f1  val_f1  w_sbert  threshold  test_pairs  test_positives
+             char TF-IDF only      0.408   0.879 0.558   0.532     0.00        1.0         251              33
+                   SBERT only      0.450   0.818 0.581   0.549     1.00        1.0         251              33
+            hybrid (no rules)      0.450   0.818 0.581   0.549     0.25        1.0         251              33
+hybrid + qty/pack/brand rules      0.450   0.818 0.581   0.549     0.25        1.0         251              33
+    hybrid + rules + MRP rule      0.935   0.879 0.906   0.962     0.00        1.0         251              33
+{'config_used': 'hybrid + rules + MRP rule', 'records': 27555, 'clusters': 26487, 'multi_member_clusters': 996, 'records_in_multi': 2064, 'largest_cluster': 12}
