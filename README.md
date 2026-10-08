@@ -37,6 +37,29 @@ python scripts/download_data.py
 python scripts/check_env.py
 ```
 
+## Run the demo
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+streamlit run app/streamlit_app.py
+```
+
+Pick a demo file in the sidebar (or upload any product CSV):
+- `bigbasket_demo_renamed_columns.csv`: 800 BigBasket rows with renamed headers ("Item Name", "MRP (Rs)", ...), many duplicates
+- `unseen_open_food_facts_world.csv`: 500 Open Food Facts rows with 25 messy columns, never used during development
+
+Tick "Use the LLM" only if Ollama is running (`ollama serve`); without it the app uses rules and embeddings only and finishes in seconds.
+
+## Project status
+
+| Phase | Status |
+|---|---|
+| 0–5 | complete: code, tests, notebook, verification report each |
+| 6 LLM layer | complete at a reduced LLM budget (see `reports/phase6_verification.md`) |
+| 7 Fine-tuning | the fine-tuned model `models/minilm-products` is trained and used by the app; the full evaluation (WDC/Hinglish comparison) was not run, for time |
+| 8 Ablation, 9 BERTopic | code written (`src/evaluate.py`, `src/topics.py`), not run, for time |
+| 9 App | complete: tested end to end on both demo files (no errors) |
+
 ## Datasets
 
 `scripts/download_data.py` downloads all of them into `data/raw/` (never edited by hand).

@@ -56,18 +56,18 @@ tab_map, tab_sel, tab_attr, tab_clu, tab_search = st.tabs(
 
 with tab_map:
     st.subheader("Detected mapping to the canonical schema")
-    st.dataframe(res["mapping"], use_container_width=True, hide_index=True)
+    st.dataframe(res["mapping"], width="stretch", hide_index=True)
     st.subheader("Canonical table")
-    st.dataframe(res["canonical"].head(50), use_container_width=True, hide_index=True)
+    st.dataframe(res["canonical"].head(50), width="stretch", hide_index=True)
 
 with tab_sel:
     st.subheader("Which columns are worth clustering, and why")
     st.dataframe(res["selection"][["column", "avg_tokens", "unique_ratio", "alpha_ratio", "entropy",
-                                   "selected", "role", "reason"]], use_container_width=True, hide_index=True)
+                                   "selected", "role", "reason"]], width="stretch", hide_index=True)
 
 with tab_attr:
     st.subheader("Attributes extracted from each product name")
-    st.dataframe(res["attributes"].head(200), use_container_width=True, hide_index=True)
+    st.dataframe(res["attributes"].head(200), width="stretch", hide_index=True)
 
 with tab_clu:
     st.subheader("Clusters of listings that refer to the same product")
@@ -75,7 +75,7 @@ with tab_clu:
     only_multi = st.checkbox("Only clusters with more than one listing", value=True)
     view = c[c["size"] > 1] if only_multi else c
     st.dataframe(view.assign(members=view["members"].map(lambda m: " | ".join(m))),
-                 use_container_width=True, hide_index=True)
+                 width="stretch", hide_index=True)
     st.caption(f"Matching settings: weight on SBERT = {res['params']['w']}, threshold = {res['params']['threshold']:.3f}, "
                f"MRP rule = {res['params']['use_mrp']}")
 
@@ -90,5 +90,5 @@ with tab_search:
                 "embeddings": pipeline.embedder().encode(pre["text"].tolist(), batch_size=128,
                                                          normalize_embeddings=True, show_progress_bar=False)}
             st.session_state["search_key"] = (name, use_llm, max_rows)
-        st.dataframe(pipeline.search(st.session_state["search_state"], query), use_container_width=True,
+        st.dataframe(pipeline.search(st.session_state["search_state"], query), width="stretch",
                      hide_index=True)
